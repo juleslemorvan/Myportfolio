@@ -6,7 +6,7 @@
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,174.000000) scale(0.100000,-0.100000)"
-fill="#fff" stroke="none">
+fill="gray" stroke="none">
 <path d="M2149 1653 c-13 -16 -12 -17 4 -4 9 7 17 15 17 17 0 8 -8 3 -21 -13z"/>
 <path d="M1997 1458 c-75 -95 -194 -252 -265 -348 -70 -96 -132 -175 -137
 -174 -5 0 -65 78 -133 172 -101 141 -128 172 -148 172 -13 0 -24 -2 -24 -5 0

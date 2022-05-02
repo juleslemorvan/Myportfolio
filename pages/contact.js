@@ -11,12 +11,14 @@ import {
 import { useRouteVisited } from "../hooks/useRouteVisited";
 import Form from "../component/Form/Form";
 import { BsFillTelephoneForwardFill, BsFillEnvelopeFill } from "react-icons/bs";
+import Meta from "../component/Meta/Meta";
 
 const contact = () => {
   useRouteVisited("/contact");
 
   return (
     <Flex align="center" h="85vh" direction="column" w="full">
+      <Meta title={"Jules Le Morvan | Contact"} />
       <ScaleFade
         initialScale={0.9}
         in

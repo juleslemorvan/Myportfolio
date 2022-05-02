@@ -41,7 +41,7 @@ const Form = () => {
       <Stack spacing={5} w="100%">
         <Flex direction="row">
           <FormControl isRequired mr="20px">
-            <FormLabel htmlFor="first-name">First name</FormLabel>
+            <FormLabel htmlFor="first-name">Prénom</FormLabel>
             <Input
               type="name"
               id="first-name"
@@ -51,7 +51,7 @@ const Form = () => {
             />
           </FormControl>
           <FormControl isRequired>
-            <FormLabel htmlFor="first-name">Last name</FormLabel>
+            <FormLabel htmlFor="first-name">Nom</FormLabel>
             <Input
               type="lastName"
               id="Last-name"
@@ -75,7 +75,9 @@ const Form = () => {
           <Text mb="8px">Votre message: </Text>
           <Textarea size="sm" name="message" />
         </FormControl>
-        <Button type="submit">Envoyer</Button>
+        <Button type="submit" variant="outline" borderColor="white">
+          Envoyer
+        </Button>
       </Stack>
     </form>
   );

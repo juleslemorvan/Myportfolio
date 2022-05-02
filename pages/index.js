@@ -2,9 +2,9 @@ import { Flex, Heading, SlideFade, Fade, VStack, Box } from "@chakra-ui/react";
 import { Button, ButtonGroup } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import Link from "next/link";
-import Head from "next/head";
 import { cloneElement } from "react";
 import { useRouteVisited } from "../hooks/useRouteVisited";
+import Meta from "../component/Meta/Meta";
 
 const Fading = ({ children, animated, component }) => {
   if (animated) {
@@ -43,9 +43,7 @@ export default function Home() {
       direction="column"
       position="relative"
     >
-      <Head>
-        <title>Jules Le Morvan - HOME</title>
-      </Head>
+      <Meta title={"Jules Le Morvan | Accueil"} />
       <Fading
         animated={!isVisited}
         component={
@@ -92,7 +90,7 @@ export default function Home() {
             <Button
               colorScheme="white"
               variant="outline"
-              transition="0.5s ease"
+              transition="0.3s ease"
               letterSpacing="3px"
               _hover={{ transform: "scale(1.1)", border: "solid 3px white" }}
               position="absolute"
@@ -102,7 +100,7 @@ export default function Home() {
             <Button
               colorScheme="white"
               variant="outline"
-              transition="0.5s ease"
+              transition="0.3s ease"
               letterSpacing="3px"
               _hover={{ transform: "scale(1.1)", border: "solid 3px white" }}
               position="absolute"

@@ -1,17 +1,25 @@
-import React from "react";
-import { Box, HStack, Heading, Flex, Stack, ScaleFade } from "@chakra-ui/react";
-import AnimationPages from "../component/AnimationPages/AnimationPages";
-import { useRouteVisited } from "../hooks/useRouteVisited";
+import { Box, Flex, Heading, ScaleFade, Stack } from "@chakra-ui/react";
 import Image from "next/image";
-import ProfilPic from "../public/ProfilPic.jpg";
+import React, { useRef } from "react";
+import { useInViewport } from "react-in-viewport";
+import AnimationPages from "../component/AnimationPages/AnimationPages";
+import Meta from "../component/Meta/Meta";
 import { logoSkillz } from "../data/logoData";
+import { useRouteVisited } from "../hooks/useRouteVisited";
+import ProfilPic from "../public/ProfilPic.jpg";
 
 const about = () => {
   useRouteVisited("/about");
   console.log(logoSkillz);
 
+  const myRef = useRef();
+  const { inViewport, enterCount, leaveCount } = useInViewport(myRef);
+
+  console.log({ inViewport, enterCount, leaveCount });
+
   return (
     <Box>
+      <Meta title={"Jules Le Morvan | About-me"} />
       <AnimationPages>
         <Stack
           direction={{ base: "column", xl: "row" }}
@@ -84,19 +92,21 @@ const about = () => {
             align="center"
             justify="center"
             flexWrap="wrap"
+            ref={myRef}
           >
             {logoSkillz.map((logo) => {
               return (
                 <ScaleFade
                   initialScale={0.9}
-                  in
-                  transition={{ enter: { duration: 0.9, delay: 0.5 } }}
+                  in={inViewport || enterCount > 0}
+                  transition={{ enter: { duration: 0.5, delay: 0.5 } }}
                 >
                   <Flex
                     maxH="100px"
                     maxW="150px"
                     flexWrap="wrap"
                     direction={{ base: "column" }}
+                    key={logo.titre}
                   >
                     <Image src={logo.image} />
                   </Flex>
