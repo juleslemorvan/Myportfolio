@@ -27,7 +27,7 @@ const NetworkButton = ({ delay, icon, animated }) => {
         />
       }
     >
-      <Button variant="ghost">{icon}</Button>
+      <Button variant="link">{icon}</Button>
     </Fading>
   );
 };
@@ -122,17 +122,36 @@ export default function Home() {
           <NetworkButton
             animated={!isVisited}
             delay={1.6}
-            icon={<FaGithub size="25px" />}
+            icon={
+              <FaGithub
+                size="25px"
+                onClick={() => window.open("https://github.com/juleslemorvan")}
+              />
+            }
           />
           <NetworkButton
             animated={!isVisited}
             delay={1.9}
-            icon={<FaLinkedin size="25px" />}
+            icon={
+              <FaLinkedin
+                size="25px"
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/jules-le-morvan-126b8b177/"
+                  )
+                }
+              />
+            }
           />
           <NetworkButton
             animated={!isVisited}
             delay={2.2}
-            icon={<FaTwitterSquare size="25px" />}
+            icon={
+              <FaTwitterSquare
+                size="25px"
+                onClick={() => window.open("https://twitter.com/juleslemorvan")}
+              />
+            }
           />
         </VStack>
       </Box>

@@ -88,7 +88,12 @@ export const ProjectItem = ({
                 ))}
               </Stack>
               <ButtonGroup variant="outline" spacing="6" pt="30px">
-                <Button colorScheme="blue" onClick={() => window.open(link)}>
+                <Button
+                  colorScheme="blue"
+                  onClick={() =>
+                    window.open("https://www.producthunt.com/posts/svg-doodles")
+                  }
+                >
                   Site
                 </Button>
                 <Button
