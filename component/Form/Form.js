@@ -48,6 +48,7 @@ const Form = () => {
               placeholder="First name"
               aria-label="First Name"
               name="name"
+              style={{ borderColor: "black" }}
             />
           </FormControl>
           <FormControl isRequired>
@@ -58,6 +59,7 @@ const Form = () => {
               placeholder="Last name"
               aria-label="Last Name"
               name="lastName"
+              style={{ borderColor: "black" }}
             />
           </FormControl>
         </Flex>
@@ -69,13 +71,19 @@ const Form = () => {
             placeholder="Email"
             aria-label="email"
             name="email"
+            style={{ borderColor: "black" }}
           />
         </FormControl>
         <FormControl>
           <Text mb="8px">Votre message: </Text>
-          <Textarea size="sm" name="message" />
+          <Textarea
+            placeholder="Votre message ..."
+            size="sm"
+            name="message"
+            style={{ borderColor: "black" }}
+          />
         </FormControl>
-        <Button type="submit" variant="outline" borderColor="white">
+        <Button type="submit" variant="outline" borderColor="black">
           Envoyer
         </Button>
       </Stack>

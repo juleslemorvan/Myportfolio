@@ -43,6 +43,10 @@ const contact = () => {
         <Stack direction="row" spacing={9}>
           <Button
             alignItems="center"
+            colorScheme="#FEE8D3"
+            color="#345995"
+            border="1px solid #345995"
+            _hover={{ transform: "scale(1.1)" }}
             leftIcon={<BsFillTelephoneForwardFill />}
             onClick={() => navigator.clipboard.writeText("07 83 12 18 55")}
           >
@@ -50,6 +54,10 @@ const contact = () => {
           </Button>
           <Button
             alignItems="center"
+            colorScheme="transparent"
+            color="#345995"
+            border="1px solid #345995"
+            _hover={{ transform: "scale(1.1)" }}
             leftIcon={<BsFillEnvelopeFill />}
             onClick={() =>
               navigator.clipboard.writeText("jules.lemorvan01@gmail.com")

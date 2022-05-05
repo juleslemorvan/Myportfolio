@@ -27,7 +27,9 @@ const NetworkButton = ({ delay, icon, animated }) => {
         />
       }
     >
-      <Button variant="link">{icon}</Button>
+      <Button _hover={{ transform: "scale(1.3)" }} variant="ghost">
+        {icon}
+      </Button>
     </Fading>
   );
 };
@@ -92,7 +94,7 @@ export default function Home() {
               variant="outline"
               transition="0.3s ease"
               letterSpacing="3px"
-              _hover={{ transform: "scale(1.1)", border: "solid 3px white" }}
+              _hover={{ transform: "scale(1.1)" }}
               position="absolute"
             >
               <Link href="/projects">CV</Link>
@@ -102,7 +104,7 @@ export default function Home() {
               variant="outline"
               transition="0.3s ease"
               letterSpacing="3px"
-              _hover={{ transform: "scale(1.1)", border: "solid 3px white" }}
+              _hover={{ transform: "scale(1.1)" }}
               position="absolute"
               left="60px"
             >
