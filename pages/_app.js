@@ -1,13 +1,7 @@
 import { theme } from "../theme/theme";
 import { createContext, useState } from "react";
 import { Layout } from "../component/Layout/Layout";
-import {
-  ThemeProvider,
-  useColorMode,
-  useTheme,
-  ColorModeScript,
-  ChakraProvider,
-} from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 
 export const AppContext = createContext(null);
 

@@ -9,7 +9,14 @@ const projects = () => {
   useRouteVisited("/projects");
 
   return (
-    <VStack align="center" w="full" my={9} mx={20}>
+    <VStack
+      align="center"
+      justifyContent="center"
+      w="full"
+      my={9}
+      mx={20}
+      mx={{ base: "{5}", md: "{20}", lg: "{40}" }}
+    >
       <Meta title={"Jules Le Morvan | Portfolio"} />
       <ScaleFade
         initialScale={0.9}
@@ -23,6 +30,8 @@ const projects = () => {
           letterSpacing="4px"
           fontFamily="Roboto"
           fontWeight="100"
+          alignItems="center"
+          fontSize={{ base: "26px", md: "40px" }}
         >
           Mes différents projets
         </Heading>

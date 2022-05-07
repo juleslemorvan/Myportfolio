@@ -17,7 +17,6 @@ export const ProjectItem = ({
   title,
   description,
   imageUrl,
-  link,
   linkGithub,
   technologies,
 }) => {
@@ -27,35 +26,57 @@ export const ProjectItem = ({
   console.log({ title, inViewport, enterCount, leaveCount });
 
   return (
-    <Flex
-      direction={{ xl: "row", lg: "column" }}
+    <Stack
+      direction={{
+        base: "column",
+        sm: "column",
+        md: "row",
+        lg: "row",
+        xl: "row",
+      }}
       w="100%"
       ref={myRef}
       justify={{ lg: "center" }}
       align={{ lg: "center" }}
     >
-      <Box w={{ xl: "40%", lg: "60%" }} mr={{ xl: "30px", lg: "Opx" }}>
+      <Box
+        w={{ md: "40%", md: "40%", lg: "40%", xl: "40%" }}
+        mr={{ lg: "Opx", xl: "30px" }}
+        rounded="3xl"
+        boxShadow="dark-lg"
+      >
         <SlideFade
           in={inViewport || enterCount > 0}
           transition={{ enter: { duration: 0.5, delay: 0.7 } }}
           offsetX="-60px"
         >
-          <Box w="100%" h="350px" bg="#1A202C" boxShadow="dark-lg" rounded="md">
+          <Box w="100%" h="350px" bg="#1A202C">
             <Image src={imageUrl} h="100%" w="100%" />
           </Box>
         </SlideFade>
       </Box>
-      <Box w={{ xl: "60%", lg: "100%" }}>
+      <Box w={{ md: "60%", lg: "60%" }}>
         <SlideFade
           in={inViewport || enterCount > 0}
           transition={{ enter: { duration: 0.5, delay: 0.7 } }}
           offsetX="60px"
         >
-          <Box bg="#1A202C" w="100%" h="350px" boxShadow="dark-lg" rounded="md">
+          <Box
+            bg="#1A202C"
+            w="100%"
+            h={{
+              sm: "350px",
+              md: "350px",
+              lg: "350px",
+              xl: "350px",
+            }}
+            boxShadow="dark-lg"
+            rounded="md"
+          >
             <Flex direction="column" justify="center" align="center" py={3}>
               <Heading
                 as="h2"
-                fontSize="25px"
+                fontSize={{ md: "25px", lg: "20px" }}
                 pt="10px"
                 color="whiteAlpha.800"
                 fontFamily="Roboto"
@@ -63,10 +84,19 @@ export const ProjectItem = ({
               >
                 {title}
               </Heading>
-              <Text p={9} lineHeight="35px" color="white" textAlign="center">
+              <Text
+                p={{ sm: "4", md: "9" }}
+                lineHeight="35px"
+                color="white"
+                textAlign="center"
+              >
                 {description}
               </Text>
-              <Stack direction="row" spacing={4}>
+              <Stack
+                direction="row"
+                spacing={4}
+                py={{ base: "20px", lg: "0px" }}
+              >
                 {technologies.map(({ name, color }) => (
                   <Badge
                     key={name}
@@ -78,7 +108,12 @@ export const ProjectItem = ({
                   </Badge>
                 ))}
               </Stack>
-              <ButtonGroup variant="outline" spacing="6" pt="30px">
+              <ButtonGroup
+                variant="outline"
+                spacing="6"
+                pt="30px"
+                mb={{ base: "20px" }}
+              >
                 <Button
                   colorScheme="blue"
                   onClick={() =>
@@ -98,6 +133,6 @@ export const ProjectItem = ({
           </Box>
         </SlideFade>
       </Box>
-    </Flex>
+    </Stack>
   );
 };
