@@ -41,12 +41,16 @@ export const Header = () => {
           <Navbar />
         </Show>
         <Show below="md">
-          <IconButton onClick={onOpen} icon={<HamburgerIcon />} />
+          <IconButton
+            onClick={onOpen}
+            icon={<HamburgerIcon />}
+            style={{ backgroundColor: "transparent" }}
+          />
         </Show>
         <Drawer isOpen={isOpen} onClose={onClose} size="full">
           <DrawerOverlay />
           <DrawerContent justifyContent="center" fontSize="30px">
-            <DrawerCloseButton />
+            <DrawerCloseButton margin="30px" padding="15px" />
             <Navbar />
           </DrawerContent>
         </Drawer>

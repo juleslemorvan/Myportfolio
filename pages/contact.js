@@ -47,6 +47,7 @@ const contact = () => {
             color="#345995"
             border="1px solid #345995"
             _hover={{ transform: "scale(1.1)" }}
+            transition="ease 0.5"
             leftIcon={<BsFillTelephoneForwardFill />}
             onClick={() => navigator.clipboard.writeText("07 83 12 18 55")}
           >
@@ -58,6 +59,7 @@ const contact = () => {
             color="#345995"
             border="1px solid #345995"
             _hover={{ transform: "scale(1.1)" }}
+            transition="ease 0.5"
             leftIcon={<BsFillEnvelopeFill />}
             onClick={() =>
               navigator.clipboard.writeText("jules.lemorvan01@gmail.com")

@@ -44,7 +44,7 @@ const about = () => {
               py="20px"
             >
               <Heading textAlign={{ base: "center", xl: "center" }}>
-                À propos de moi
+                À-propos de moi
               </Heading>
             </Flex>
             <Box>

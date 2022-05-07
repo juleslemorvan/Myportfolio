@@ -48,7 +48,8 @@ const Form = () => {
               placeholder="First name"
               aria-label="First Name"
               name="name"
-              style={{ borderColor: "black" }}
+              style={{ borderColor: "#355995" }}
+              autoComplete="off"
             />
           </FormControl>
           <FormControl isRequired>
@@ -59,7 +60,8 @@ const Form = () => {
               placeholder="Last name"
               aria-label="Last Name"
               name="lastName"
-              style={{ borderColor: "black" }}
+              style={{ borderColor: "#355995" }}
+              autoComplete="off"
             />
           </FormControl>
         </Flex>
@@ -71,7 +73,8 @@ const Form = () => {
             placeholder="Email"
             aria-label="email"
             name="email"
-            style={{ borderColor: "black" }}
+            style={{ borderColor: "#355995" }}
+            autoComplete="off"
           />
         </FormControl>
         <FormControl>
@@ -80,10 +83,11 @@ const Form = () => {
             placeholder="Votre message ..."
             size="sm"
             name="message"
-            style={{ borderColor: "black" }}
+            style={{ borderColor: "#355995" }}
+            autoComplete="off"
           />
         </FormControl>
-        <Button type="submit" variant="outline" borderColor="black">
+        <Button type="submit" variant="outline" borderColor="#355995">
           Envoyer
         </Button>
       </Stack>

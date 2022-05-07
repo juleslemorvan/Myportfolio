@@ -4,7 +4,7 @@ export const projectsData = [
     subtitle: "MERN Stack",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    imageUrl: "./project-1.gif",
+    imageUrl: "./netflix.gif",
     link: "https://reactbootcamp.com",
     linkGithub: "https://www.github.com",
     technologies: [

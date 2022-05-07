@@ -47,13 +47,14 @@ export const Navbar = () => {
       isInline={false}
     >
       <Stack
+        textAlign={{ base: "center" }}
         direction={{ base: "column", md: "row" }}
         spacing="20px"
         fontFamily="Roboto"
-        letterSpacing="4px"
+        letterSpacing="2px"
       >
-        <NavbarLink url="/" title="Home" />
-        <NavbarLink url="/about" title="About" />
+        <NavbarLink url="/" title="Accueil" />
+        <NavbarLink url="/about" title="Présentation" />
         <NavbarLink url="/projects" title="Projets" />
         <NavbarLink url="/contact" title="Contact" />
       </Stack>

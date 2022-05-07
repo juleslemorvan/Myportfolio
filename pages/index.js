@@ -21,7 +21,7 @@ const NetworkButton = ({ delay, icon, animated }) => {
       component={
         <SlideFade
           offsetX="20px"
-          offsetY="0px"
+          offsetY="30px"
           in
           transition={{ enter: { duration: 1, delay } }}
         />

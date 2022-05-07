@@ -8,6 +8,7 @@ import react from "../assets/img/logo-skillz/react.svg";
 import nextjs from "../assets/img/logo-skillz/nextjs.svg";
 import redux from "../assets/img/logo-skillz/redux.svg";
 import firebase from "../assets/img/logo-skillz/firebase.svg";
+import material from "../assets/img/logo-skillz/material.svg";
 
 export const logoSkillz = [
   {
@@ -49,5 +50,9 @@ export const logoSkillz = [
   {
     titre: "firebase",
     image: firebase,
+  },
+  {
+    titre: "material",
+    image: material,
   },
 ];

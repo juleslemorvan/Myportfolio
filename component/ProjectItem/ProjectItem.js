@@ -40,17 +40,8 @@ export const ProjectItem = ({
           transition={{ enter: { duration: 0.5, delay: 0.7 } }}
           offsetX="-60px"
         >
-          <Box
-            w="100%"
-            h="350px"
-            bg="#1A202C"
-            boxShadow="dark-lg"
-            rounded="md"
-            cursor="pointer"
-            _hover={{ border: "solid 1px white" }}
-            transition=" 0.1s ease"
-          >
-            <Image src={imageUrl} />
+          <Box w="100%" h="350px" bg="#1A202C" boxShadow="dark-lg" rounded="md">
+            <Image src={imageUrl} h="100%" w="100%" />
           </Box>
         </SlideFade>
       </Box>
