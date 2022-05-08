@@ -9,7 +9,7 @@ export const Layout = ({ children }) => {
     <Flex direction="column" h="100vh">
       <Meta />
       <Header />
-      <Flex flex={1} px={{ base: "20px", sm: "25px", md: "20px" }}>
+      <Flex flex={1} px={{ base: "20px", sm: "25px", md: "65px", lg: "80px" }}>
         {children}
       </Flex>
       <Footer />

@@ -31,7 +31,7 @@ const projects = () => {
           fontFamily="Roboto"
           fontWeight="100"
           alignItems="center"
-          fontSize={{ base: "26px", md: "40px" }}
+          fontSize={{ base: "26px", sm: "40px", md: "40px" }}
         >
           Mes différents projets
         </Heading>

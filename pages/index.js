@@ -20,7 +20,7 @@ const NetworkButton = ({ delay, icon, animated }) => {
       animated={animated}
       component={
         <SlideFade
-          offsetX="20px"
+          offsetX="90px"
           offsetY="0px"
           in
           transition={{ enter: { duration: 1, delay } }}
@@ -53,10 +53,11 @@ export default function Home() {
         }
       >
         <Heading
-          size="lg"
+          fontSize={{ base: "30px", lg: "30px", xl: "40px" }}
           fontFamily="Roboto"
           fontWeight="100"
           letterSpacing="3px"
+          pl={{ base: "10px" }}
         >
           Jules Le Morvan
         </Heading>
@@ -72,7 +73,12 @@ export default function Home() {
           />
         }
       >
-        <Heading size={"4xl"} fontFamily="Roboto" letterSpacing="3px">
+        <Heading
+          fontSize={{ base: "45px", lg: "50px", xl: "90px" }}
+          fontFamily="Roboto"
+          letterSpacing="3px"
+          pl={{ base: "10px" }}
+        >
           Developer Front-End
         </Heading>
       </Fading>

@@ -2,7 +2,6 @@ import React from "react";
 import {
   Flex,
   Heading,
-  HStack,
   ScaleFade,
   SlideFade,
   Stack,
@@ -70,8 +69,20 @@ const contact = () => {
         </Stack>
       </ScaleFade>
 
-      <HStack w="full" mt="30px" spacing={8}>
-        <Flex w="50%" justifyContent="center" align="enter" h="full">
+      <Stack
+        w="full"
+        mt="30px"
+        spacing={8}
+        direction={{ base: "column", sm: "column", md: "row" }}
+        align="center"
+        justify="center"
+      >
+        <Flex
+          w={{ sm: "100%", md: "50%" }}
+          justifyContent="center"
+          align="enter"
+          h="full"
+        >
           <iframe
             width="100%"
             height="100%"
@@ -105,7 +116,7 @@ const contact = () => {
             </Flex>
           </SlideFade>
         </Flex>
-      </HStack>
+      </Stack>
     </Flex>
   );
 };

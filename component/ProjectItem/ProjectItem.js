@@ -38,6 +38,7 @@ export const ProjectItem = ({
       ref={myRef}
       justify={{ lg: "center" }}
       align={{ lg: "center" }}
+      spacing={6}
     >
       <Box
         w={{ md: "40%", md: "40%", lg: "40%", xl: "40%" }}
@@ -51,11 +52,11 @@ export const ProjectItem = ({
           offsetX="-60px"
         >
           <Box w="100%" h="350px" bg="#1A202C">
-            <Image src={imageUrl} h="100%" w="100%" />
+            <Image src={imageUrl} h="100%" w="100%" rounded />
           </Box>
         </SlideFade>
       </Box>
-      <Box w={{ md: "60%", lg: "60%" }}>
+      <Box w={{ md: "60%", lg: "60%", xl: "60%" }}>
         <SlideFade
           in={inViewport || enterCount > 0}
           transition={{ enter: { duration: 0.5, delay: 0.7 } }}
@@ -76,7 +77,7 @@ export const ProjectItem = ({
             <Flex direction="column" justify="center" align="center" py={3}>
               <Heading
                 as="h2"
-                fontSize={{ md: "25px", lg: "20px" }}
+                fontSize={{ sm: "30px", md: "25px", lg: "40px" }}
                 pt="10px"
                 color="whiteAlpha.800"
                 fontFamily="Roboto"
@@ -85,24 +86,25 @@ export const ProjectItem = ({
                 {title}
               </Heading>
               <Text
-                p={{ sm: "4", md: "9" }}
+                p={{ sm: "4", md: "5" }}
                 lineHeight="35px"
                 color="white"
                 textAlign="center"
+                fontSize={{ lg: "20px" }}
               >
                 {description}
               </Text>
               <Stack
                 direction="row"
                 spacing={4}
-                py={{ base: "20px", lg: "0px" }}
+                py={{ base: "20px", md: "0px", lg: "0px" }}
               >
                 {technologies.map(({ name, color }) => (
                   <Badge
                     key={name}
                     variant="outline"
                     colorScheme={color}
-                    fontSize="17px"
+                    fontSize={{ lg: "23px" }}
                   >
                     {name}
                   </Badge>
@@ -111,8 +113,9 @@ export const ProjectItem = ({
               <ButtonGroup
                 variant="outline"
                 spacing="6"
-                pt="30px"
+                pt={{ sm: "10px", md: "30px" }}
                 mb={{ base: "20px" }}
+                size="lg"
               >
                 <Button
                   colorScheme="blue"
