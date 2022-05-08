@@ -1,14 +1,14 @@
 import git from "../assets/img/logo-skillz/git.svg";
 import html5 from "../assets/img/logo-skillz/HTML5.svg";
-import css from "../assets/img/logo-skillz/CSS3.svg";
-import javascript from "../assets/img/logo-skillz/javascript.svg";
-import tailwindCss from "../assets/img/logo-skillz/tailwind-css.svg";
-import chakraUi from "../assets/img/logo-skillz/chakraui.svg";
+import css from "../assets/img/logo-skillz/css3.svg";
+import javascript from "../assets/img/logo-skillz/javascript-2.svg";
+import tailwindcss from "../assets/img/logo-skillz/tailwindcss.svg";
+import chakraUi from "../assets/img/logo-skillz/chakra.svg";
 import react from "../assets/img/logo-skillz/react.svg";
 import nextjs from "../assets/img/logo-skillz/nextjs.svg";
 import redux from "../assets/img/logo-skillz/redux.svg";
 import firebase from "../assets/img/logo-skillz/firebase.svg";
-import material from "../assets/img/logo-skillz/material.svg";
+import materialuii from "../assets/img/logo-skillz/materialuii.png";
 
 export const logoSkillz = [
   {
@@ -25,7 +25,7 @@ export const logoSkillz = [
   },
   {
     titre: "tailwindcss",
-    image: tailwindCss,
+    image: tailwindcss,
   },
   {
     titre: "chakraUi",
@@ -52,7 +52,7 @@ export const logoSkillz = [
     image: firebase,
   },
   {
-    titre: "material",
-    image: material,
+    titre: "materialuii",
+    image: materialuii,
   },
 ];

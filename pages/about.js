@@ -77,16 +77,19 @@ const about = () => {
           h="2px"
           borderLeftRadius="50%"
           borderRightRadius="50%"
-          my={{ sm: "100px", md: "0px" }}
         ></Box>
       </Flex>
       <Box h="80vh">
         <Flex justify="center" mt="60px" direction="column" align="center">
-          <Heading fontSize="25px">Les Technologies que j'utilise :</Heading>
+          <Heading
+            fontSize={{ md: "25px", lg: "40px" }}
+            mb={{ base: "50px", lg: "50px" }}
+          >
+            Les Technologies que j'utilise :
+          </Heading>
           <Stack
             h="60vh"
             w="full"
-            spacing={"100px"}
             mb="30px"
             direction="row"
             align="center"
@@ -99,15 +102,11 @@ const about = () => {
                 <ScaleFade
                   initialScale={0.9}
                   in={inViewport || enterCount > 0}
-                  transition={{ enter: { duration: 0.5, delay: 0.5 } }}
+                  transition={{
+                    enter: { duration: 0.7, delay: Math.random() },
+                  }}
                 >
-                  <Flex
-                    maxH="100px"
-                    maxW="150px"
-                    flexWrap="wrap"
-                    direction={{ base: "column" }}
-                    key={logo.titre}
-                  >
+                  <Flex h="100px" w="100px" key={logo.titre} mx="10px">
                     <Image src={logo.image} />
                   </Flex>
                 </ScaleFade>
