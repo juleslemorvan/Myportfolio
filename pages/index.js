@@ -1,4 +1,12 @@
-import { Flex, Heading, SlideFade, Fade, VStack, Box } from "@chakra-ui/react";
+import {
+  Flex,
+  Heading,
+  SlideFade,
+  Fade,
+  VStack,
+  Box,
+  Stack,
+} from "@chakra-ui/react";
 import { Button, ButtonGroup } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import Link from "next/link";
@@ -38,14 +46,9 @@ export default function Home() {
   const isVisited = useRouteVisited("/");
 
   return (
-    <Flex
-      flex="1"
-      align="flex-start"
-      justify="center"
-      direction="column"
-      position="relative"
-    >
+    <Flex flex="1" align="center" justify="center" direction="column">
       <Meta title={"Jules Le Morvan | Accueil"} />
+
       <Fading
         animated={!isVisited}
         component={
@@ -53,12 +56,12 @@ export default function Home() {
         }
       >
         <Heading
-          fontSize={{ base: "30px", lg: "30px", xl: "40px" }}
+          fontSize={{ base: "20px", lg: "25px", xl: "30px" }}
           fontFamily="Roboto"
           fontWeight="100"
           letterSpacing="3px"
-          pl={{ base: "10px" }}
         >
+          {/* PROBLEME PADDING SUR ECRAN LARGE */}
           Jules Le Morvan
         </Heading>
       </Fading>
@@ -74,12 +77,12 @@ export default function Home() {
         }
       >
         <Heading
-          fontSize={{ base: "45px", lg: "50px", xl: "90px" }}
+          fontSize={{ base: "35px", md: "45px", lg: "60px" }}
           fontFamily="Roboto"
           letterSpacing="3px"
-          pl={{ base: "10px" }}
+          textAlign="center"
         >
-          Developer Front-End
+          Développeur Front-End
         </Heading>
       </Fading>
 
@@ -93,7 +96,7 @@ export default function Home() {
           />
         }
       >
-        <Flex position="relative">
+        <Flex alignItems="center">
           <ButtonGroup variant="outline" spacing={6} mt={6}>
             <Button
               colorScheme="white"
@@ -101,9 +104,10 @@ export default function Home() {
               transition="0.3s ease"
               letterSpacing="3px"
               _hover={{ transform: "scale(1.1)" }}
-              position="absolute"
             >
-              <Link href="/projects">CV</Link>
+              <Link href="/ProfilPic.jpg" download>
+                CV
+              </Link>
             </Button>
             <Button
               colorScheme="white"
@@ -111,8 +115,6 @@ export default function Home() {
               transition="0.3s ease"
               letterSpacing="3px"
               _hover={{ transform: "scale(1.1)" }}
-              position="absolute"
-              left="60px"
             >
               <Link href="/contact">Contact</Link>
             </Button>
@@ -122,11 +124,13 @@ export default function Home() {
 
       <Box
         position="absolute"
-        right="-60px"
-        top="50%"
-        transform="translateY(-50%)"
+        top={{ base: "unset", md: "50%" }}
+        right={{ base: "unset", md: "0px", xl: "20px" }}
+        transform={{ base: "translateX(-50%)", md: "translateY(-50%)" }}
+        bottom={{ base: "100px", md: "unset" }}
+        left={{ base: "50%", md: "unset" }}
       >
-        <VStack spacing={7}>
+        <Stack spacing={7} direction={{ base: "row", md: "column" }}>
           <NetworkButton
             animated={!isVisited}
             delay={1.6}
@@ -161,7 +165,7 @@ export default function Home() {
               />
             }
           />
-        </VStack>
+        </Stack>
       </Box>
     </Flex>
   );

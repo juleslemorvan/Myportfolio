@@ -1,4 +1,12 @@
-import { Box, Flex, Heading, ScaleFade, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  ScaleFade,
+  Stack,
+  Divider,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import Image from "next/image";
 import React, { useRef } from "react";
 import { useInViewport } from "react-in-viewport";
@@ -7,6 +15,24 @@ import Meta from "../component/Meta/Meta";
 import { logoSkillz } from "../data/logoData";
 import { useRouteVisited } from "../hooks/useRouteVisited";
 import ProfilPic from "../public/ProfilPic.jpg";
+import { createBreakpoints } from "@chakra-ui/theme-tools";
+
+export const breakpoints = createBreakpoints({
+  sm: "481px",
+  md: "769px",
+  lg: "1025px",
+  xl: "1201px",
+});
+
+const deviceBreakpoint = {
+  mobile: "sm",
+  tabletS: "md",
+  tabletL: "lg",
+  desktop: "xl",
+};
+
+const useDevice = (device) =>
+  useMediaQuery([`(min-width : ${breakpoints[deviceBreakpoint[device]]})`])[0];
 
 const about = () => {
   useRouteVisited("/about");
@@ -15,71 +41,67 @@ const about = () => {
   const myRef = useRef();
   const { inViewport, enterCount, leaveCount } = useInViewport(myRef);
 
-  console.log({ inViewport, enterCount, leaveCount });
+  const isMobile = useDevice("mobile");
+  const isTablet = useDevice("tabletS");
+  console.log({ isMobile, isTablet });
 
   return (
     <Box>
-      <Meta title={"Jules Le Morvan | About-me"} />
+      <Meta title={"Jules Le Morvan | Présentation"} />
       <AnimationPages>
-        <Stack
-          direction={{ base: "column", xl: "row" }}
-          h="80vh"
-          flex="1"
-          justify="center"
-          align="center"
-          m={6}
-        >
-          <Box
-            flex={4}
-            mt={{ base: "100px" }}
-            boxSize={{ base: "300px", xl: "450px" }}
+        <Flex h={{ base: "unset", lg: "90vh" }} justify="center" align="center">
+          <Stack
+            direction={{ base: "column", lg: "row" }}
+            flex="1 1 auto"
+            my={10}
+            px={{ base: "0px", md: "30px" }}
+            spacing="30px"
+            align="center"
           >
-            <Image src={ProfilPic} />
-          </Box>
+            <Flex flex={4} justify="center" align="center">
+              <Image
+                src={ProfilPic}
 
-          <Box flex={6} textAlign={{ base: "center", xl: "start" }}>
-            <Flex
-              justify={{ base: "center", xl: "flex-start" }}
-              align="center"
-              py="20px"
-            >
-              <Heading textAlign={{ base: "center", xl: "center" }}>
-                À-propos de moi
-              </Heading>
+                // width={isMobile ? "100" : isTablet ? "200" : "350"}
+                // height={isMobile ? "100" : isTablet ? "200" : "350"}
+              />
             </Flex>
-            <Box>
-              Apres des études en Marketing et développement commercial, j'ai
-              décidé de me reconvertir dans le developpement Web.
-              <br />
-              <br />
-              En 2020 j'ai décidé de me lancer dans l'apprentissage du code en
-              effectuant un bootcamp, le Wagon.
-              <br />
-              Durant ces 2 mois intensifs j'ai pu concevoir une application Web
-              de bout en bout et acquérir une vision global de son achitecture.
-              <br />
-              Face à cette premiere experience ou j'ai utilisé majoritairement
-              le language Back "Ruby" avec son framework "Rails", j'ai pu
-              constater mon attirance vers le front avec le language Javascript.
-              <br />
-              <br />
-              Fort de ce constat, je me suis lancé par la suite dans une
-              formation Front-end React avec l'organisme OpenclassRoom que je
-              devrai terminer durant les prochaines semaines.
+            <Box flex={6} textAlign={{ base: "center", xl: "start" }}>
+              <Flex mb="20px" justify="center" align="center">
+                <Heading textAlign={{ base: "center", xl: "center" }}>
+                  À-propos de moi
+                </Heading>
+              </Flex>
+              <Box px={{ base: "0px", md: "20px" }}>
+                Apres des études en Marketing et développement commercial, j'ai
+                décidé de me reconvertir dans le developpement Web.
+                <br />
+                <br />
+                En 2020 j'ai décidé de me lancer dans l'apprentissage du code en
+                effectuant un bootcamp, le Wagon.
+                <br />
+                Durant ces 2 mois intensifs j'ai pu concevoir une application
+                Web de bout en bout et acquérir une vision global de son
+                achitecture.
+                <br />
+                Face à cette premiere experience ou j'ai utilisé majoritairement
+                le language Back "Ruby" avec son framework "Rails", j'ai pu
+                constater mon attirance vers le front avec le language
+                Javascript.
+                <br />
+                <br />
+                Fort de ce constat, je me suis lancé par la suite dans une
+                formation Front-end React avec l'organisme OpenclassRoom que je
+                devrai terminer durant les prochaines semaines.
+              </Box>
             </Box>
-          </Box>
-        </Stack>
+          </Stack>
+        </Flex>
       </AnimationPages>
-      <Flex justify="center" align="center" w="100%" mt="100px">
-        <Box
-          borderBottom="4px solid "
-          w="50%"
-          h="2px"
-          borderLeftRadius="50%"
-          borderRightRadius="50%"
-        ></Box>
-      </Flex>
-      <Box h="80vh">
+      <Box h={{ base: "unset", lg: "80vh" }}>
+        <Flex justify="center">
+          <Divider width="70%" borderColor="teal" />
+        </Flex>
         <Flex justify="center" mt="60px" direction="column" align="center">
           <Heading
             fontSize={{ md: "25px", lg: "40px" }}
@@ -100,10 +122,10 @@ const about = () => {
             {logoSkillz.map((logo) => {
               return (
                 <ScaleFade
-                  initialScale={0.9}
+                  initialScale={0.5}
                   in={inViewport || enterCount > 0}
                   transition={{
-                    enter: { duration: 0.7, delay: Math.random() },
+                    enter: { duration: 0.6, delay: Math.random() },
                   }}
                 >
                   <Flex h="100px" w="100px" key={logo.titre} mx="10px">

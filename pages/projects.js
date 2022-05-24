@@ -30,7 +30,6 @@ const projects = () => {
           letterSpacing="4px"
           fontFamily="Roboto"
           fontWeight="100"
-          alignItems="center"
           fontSize={{ base: "26px", sm: "40px", md: "40px" }}
         >
           Mes différents projets

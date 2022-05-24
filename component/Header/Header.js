@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Heading,
   HStack,
   Show,
+  Hide,
   IconButton,
   Drawer,
   DrawerOverlay,
@@ -11,11 +12,18 @@ import {
   useDisclosure,
   SlideFade,
 } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { Navbar } from "../Navbar/Navbar";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
 export const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const router = useRouter();
+
+  useEffect(() => {
+    onClose();
+  }, [router.asPath]);
+
   return (
     <SlideFade
       offsetY="-20px"
@@ -28,7 +36,7 @@ export const Header = () => {
         p={{ base: "30px", xl: "20px" }}
       >
         <Heading
-          ml={{ base: "Opx", lg: "50px" }}
+          ml={{ base: "0px", lg: "50px" }}
           fontSize="xl"
           flex
           fontFamily="Roboto"
@@ -37,9 +45,9 @@ export const Header = () => {
         >
           JLM
         </Heading>
-        <Show above="md">
+        <Hide below="md">
           <Navbar />
-        </Show>
+        </Hide>
         <Show below="md">
           <IconButton
             onClick={onOpen}
