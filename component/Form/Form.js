@@ -11,13 +11,17 @@ import {
   Flex,
   Button,
 } from "@chakra-ui/react";
+import { useToast } from "@chakra-ui/react";
+import { useState } from "react";
 
 const Form = () => {
   const form = useRef();
+  const toast = useToast();
+  const [isLoading, setIsLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setIsLoading(true);
     emailjs
       .sendForm(
         "service_gu7q00x",
@@ -27,7 +31,14 @@ const Form = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          toast({
+            title: "Email envoyé avec succès",
+            status: "success",
+            duration: 5000,
+            isClosable: true,
+            position: "top",
+          });
+          setIsLoading(false);
         },
         (error) => {
           console.log(error.text);
@@ -85,9 +96,15 @@ const Form = () => {
             name="message"
             style={{ borderColor: "#355995" }}
             autoComplete="off"
+            minHeight="125px"
           />
         </FormControl>
-        <Button type="submit" variant="outline" borderColor="#355995">
+        <Button
+          isLoading={isLoading}
+          type="submit"
+          variant="outline"
+          borderColor="#355995"
+        >
           Envoyer
         </Button>
       </Stack>

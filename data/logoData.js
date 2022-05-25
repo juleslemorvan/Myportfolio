@@ -13,41 +13,61 @@ export const logoSkillz = [
   {
     titre: "html",
     image: html5,
+    order: 8,
   },
   {
     titre: "CSS",
     image: css,
+    order: 9,
   },
   {
     titre: "javascript",
     image: javascript,
+    order: 7,
   },
   {
     titre: "tailwindcss",
     image: tailwindcss,
+    order: 6,
   },
   {
     titre: "chakraUi",
     image: chakraUi,
+    order: 5,
   },
   {
     titre: "react",
     image: react,
+    label: "React",
+    order: 1,
   },
   {
     titre: "nextjs",
     image: nextjs,
+    order: 3,
   },
   {
     titre: "redux",
     image: redux,
+    label: "Redux",
+    link: "https://redux.js.org/",
+    order: 2,
   },
   {
     titre: "GIT",
     image: git,
+    order: 10,
   },
   {
     titre: "firebase",
     image: firebase,
+    order: 4,
   },
 ];
+
+export const getLogoSkillzRows = () => {
+  const allLogos = logoSkillz.sort((a, b) => a.order - b.order);
+  const firstLine = allLogos.slice(0, 6);
+  const secondLine = allLogos.slice(6, allLogos.length);
+  return [firstLine, secondLine];
+};

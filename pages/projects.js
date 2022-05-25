@@ -9,14 +9,7 @@ const projects = () => {
   useRouteVisited("/projects");
 
   return (
-    <VStack
-      align="center"
-      justifyContent="center"
-      w="full"
-      my={9}
-      mx={20}
-      mx={{ base: "{5}", md: "{20}", lg: "{40}" }}
-    >
+    <VStack align="center" justifyContent="center" w="full" my={9}>
       <Meta title={"Jules Le Morvan | Portfolio"} />
       <ScaleFade
         initialScale={0.9}
@@ -26,21 +19,24 @@ const projects = () => {
         <Heading
           as="h1"
           mt={4}
-          mb="100px"
+          mb="120px"
           letterSpacing="4px"
           fontFamily="Roboto"
           fontWeight="100"
+          textAlign="center"
           fontSize={{ base: "26px", sm: "40px", md: "40px" }}
         >
           Mes différents projets
         </Heading>
       </ScaleFade>
-      {projectsData.map((item) => (
-        <Fragment key={item.title}>
-          <ProjectItem {...item} />
-          <Box h="100px" />
-        </Fragment>
-      ))}
+      <VStack align="stretch">
+        {projectsData.map((item) => (
+          <Fragment key={item.title}>
+            <ProjectItem {...item} />
+            <Box h="100px" />
+          </Fragment>
+        ))}
+      </VStack>
     </VStack>
   );
 };

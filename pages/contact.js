@@ -7,6 +7,7 @@ import {
   Stack,
   Button,
 } from "@chakra-ui/react";
+import { useToast } from "@chakra-ui/react";
 import { useRouteVisited } from "../hooks/useRouteVisited";
 import Form from "../component/Form/Form";
 import { BsFillTelephoneForwardFill, BsFillEnvelopeFill } from "react-icons/bs";
@@ -14,9 +15,10 @@ import Meta from "../component/Meta/Meta";
 
 const contact = () => {
   useRouteVisited("/contact");
+  const toast = useToast();
 
   return (
-    <Flex align="center" h="85vh" direction="column" w="full">
+    <Flex align="center" h="85vh" direction="column" w="full" mt="40px">
       <Meta title={"Jules Le Morvan | Contact"} />
       <ScaleFade
         initialScale={0.9}
@@ -39,7 +41,7 @@ const contact = () => {
         in
         transition={{ enter: { duration: 0.7, delay: 1 } }}
       >
-        <Stack direction="row" spacing={9}>
+        <Stack direction={{ base: "column", md: "row" }} spacing={9}>
           <Button
             alignItems="center"
             colorScheme="#FEE8D3"
@@ -48,7 +50,16 @@ const contact = () => {
             _hover={{ transform: "scale(1.1)" }}
             transition="ease 0.5"
             leftIcon={<BsFillTelephoneForwardFill />}
-            onClick={() => navigator.clipboard.writeText("07 83 12 18 55")}
+            onClick={() => {
+              navigator.clipboard.writeText("07 83 12 18 55");
+              toast({
+                title: "Téléphone copié dans le presse-papiers",
+                status: "success",
+                duration: 2000,
+                isClosable: false,
+                position: "top",
+              });
+            }}
           >
             07 83 12 18 55
           </Button>
@@ -60,9 +71,16 @@ const contact = () => {
             _hover={{ transform: "scale(1.1)" }}
             transition="ease 0.5"
             leftIcon={<BsFillEnvelopeFill />}
-            onClick={() =>
-              navigator.clipboard.writeText("jules.lemorvan01@gmail.com")
-            }
+            onClick={() => {
+              navigator.clipboard.writeText("jules.lemorvan01@gmail.com");
+              toast({
+                title: "Email copié dans le presse-papiers",
+                status: "success",
+                duration: 5000,
+                isClosable: true,
+                position: "top",
+              });
+            }}
           >
             jules.lemorvan01@gmail.com
           </Button>
@@ -77,26 +95,7 @@ const contact = () => {
         align="center"
         justify="center"
       >
-        <Flex
-          w={{ sm: "100%", md: "50%" }}
-          justifyContent="center"
-          align="enter"
-          h="full"
-        >
-          <iframe
-            width="100%"
-            height="100%"
-            title="map"
-            className="absolute inset-0 "
-            frameBorder={0}
-            marginHeight={0}
-            marginWidth={0}
-            style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed/v1/place?q=14+rue+pasteur+lyon+&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-          />
-        </Flex>
-
-        <Flex w="50%" justifyContent="center" align="enter" direction="column">
+        <Flex justifyContent="center" align="enter" direction="column">
           <SlideFade
             in
             transition={{ enter: { duration: 1, delay: 0.7 } }}

@@ -5,6 +5,7 @@ export const Footer = () => {
     <Fade in transition={{ enter: { duration: 1, delay: 1.5 } }}>
       <Flex
         h="100px"
+        width="100%"
         justify="center"
         align="center"
         textAlign="center"

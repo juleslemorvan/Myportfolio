@@ -23,60 +23,50 @@ export const ProjectItem = ({
   const myRef = useRef();
   const { inViewport, enterCount, leaveCount } = useInViewport(myRef);
 
-  console.log({ title, inViewport, enterCount, leaveCount });
-
   return (
     <Stack
       direction={{
         base: "column",
         xl: "row",
       }}
-      w="100%"
       ref={myRef}
-      justify={{ lg: "center" }}
-      align={{ lg: "center" }}
+      alignItems="stretch"
+      justify="stretch"
       spacing={6}
     >
-      <Box flex={4}>
+      <Box flex={4} height="100%">
         <SlideFade
           in={inViewport || enterCount > 0}
           transition={{ enter: { duration: 0.5, delay: 0.7 } }}
           offsetX="-60px"
+          style={{ height: "100%" }}
         >
-          <Box
-            h={{ base: "unset", xl: "350px" }}
-            bg="#1A202C"
-            mr={{ lg: "0px", xl: "30px" }}
-          >
-            <Image
-              src={imageUrl}
-              backgroundPosition="center"
-              h="100%"
-              w="100%"
-            />
-          </Box>
+          <Image
+            src={imageUrl}
+            objectPosition="top top"
+            h="100%"
+            maxH={{ base: "300px", xl: "unset" }}
+            w="100%"
+            objectFit="cover"
+          />
         </SlideFade>
       </Box>
-      <Box flex={6} rounded="full" w="100%">
+      <Box flex={6} rounded="full" height="100%">
         <SlideFade
           in={inViewport || enterCount > 0}
           transition={{ enter: { duration: 0.5, delay: 0.7 } }}
           offsetX="60px"
+          style={{ height: "100%" }}
         >
-          <Box
-            bg="#1A202C"
-            w="100%"
-            h={{ base: "unset", xl: "350px" }}
-            boxShadow="dark-lg"
-          >
+          <Box bg="#1A202C" w="100%" h="100%" boxShadow="dark-lg">
             <Flex direction="column" justify="center" align="center" py={3}>
               <Heading
                 as="h2"
-                fontSize={{ sm: "30px", md: "25px", lg: "40px" }}
+                fontSize={{ base: "30px", md: "25px", lg: "40px" }}
                 pt="10px"
                 color="whiteAlpha.800"
                 fontFamily="Roboto"
-                fontWeight="100"
+                fontWeight="300"
               >
                 {title}
               </Heading>
