@@ -32,10 +32,10 @@ const Form = () => {
       .then(
         (result) => {
           toast({
-            title: "Email envoyé avec succès",
+            title: "message envoyé avec succès",
             status: "success",
-            duration: 5000,
-            isClosable: true,
+            duration: 3000,
+            isClosable: false,
             position: "top",
           });
           setIsLoading(false);

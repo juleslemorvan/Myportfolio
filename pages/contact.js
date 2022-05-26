@@ -18,7 +18,7 @@ const contact = () => {
   const toast = useToast();
 
   return (
-    <Flex align="center" h="85vh" direction="column" w="full" mt="40px">
+    <Flex align="center" h="100vh" direction="column" w="full" mt="40px">
       <Meta title={"Jules Le Morvan | Contact"} />
       <ScaleFade
         initialScale={0.9}
@@ -76,8 +76,8 @@ const contact = () => {
               toast({
                 title: "Email copié dans le presse-papiers",
                 status: "success",
-                duration: 5000,
-                isClosable: true,
+                duration: 2000,
+                isClosable: false,
                 position: "top",
               });
             }}

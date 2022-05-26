@@ -98,7 +98,7 @@ const about = () => {
         </Stack>
       </AnimationPages>
       <Flex justify="center">
-        <Divider width="70%" borderColor="teal" />
+        <Divider width="70%" borderColor="teal" my="20px" />
       </Flex>
       <Flex
         justify="center"
