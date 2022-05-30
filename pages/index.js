@@ -61,7 +61,6 @@ export default function Home() {
           fontWeight="100"
           letterSpacing="3px"
         >
-          {/* PROBLEME PADDING SUR ECRAN LARGE */}
           Jules Le Morvan
         </Heading>
       </Fading>

@@ -14,7 +14,7 @@ import React, { useRef } from "react";
 import { useInViewport } from "react-in-viewport";
 import AnimationPages from "../component/AnimationPages/AnimationPages";
 import Meta from "../component/Meta/Meta";
-import { logoSkillz, getLogoSkillzRows } from "../data/logoData";
+import { getLogoSkillzRows } from "../data/logoData";
 import { useRouteVisited } from "../hooks/useRouteVisited";
 import ProfilPic from "../public/ProfilPic.jpg";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
@@ -33,17 +33,17 @@ const deviceBreakpoint = {
   desktop: "xl",
 };
 
-const useDevice = (device) =>
-  useMediaQuery([`(min-width : ${breakpoints[deviceBreakpoint[device]]})`])[0];
+// const useDevice = (device) =>
+//   useMediaQuery([`(min-width : ${breakpoints[deviceBreakpoint[device]]})`])[0];
 
-const about = () => {
+const About = () => {
   useRouteVisited("/about");
 
   const myRef = useRef();
   const { inViewport, enterCount, leaveCount } = useInViewport(myRef);
 
-  const isMobile = useDevice("mobile");
-  const isTablet = useDevice("tabletS");
+  // const isMobile = useDevice("mobile");
+  // const isTablet = useDevice("tabletS");
 
   const logosRows = getLogoSkillzRows();
 
@@ -63,16 +63,26 @@ const about = () => {
         >
           <Flex flex={4} justify="center" align="center">
             <Image
+              alt="image-profil"
+              src={ProfilPic}
+              quality={100}
+              width="300px"
+              height="300px"
+              style={{ borderRadius: "6px" }}
+            />
+            {/* <Image
               src={ProfilPic}
               quality={100}
               width={isMobile ? "100" : isTablet ? "200" : "350"}
               height={isMobile ? "100" : isTablet ? "200" : "350"}
               style={{ borderRadius: "6px" }}
-            />
+            /> */}
           </Flex>
           <Box flex={6} textAlign={{ base: "center", xl: "start" }}>
             <Flex mb="20px" justify="center" align="center">
-              <Heading textAlign="center">À-propos de moi</Heading>
+              <Heading textAlign="center" letterSpacing="4px">
+                À-propos de moi
+              </Heading>
             </Flex>
             <Box px={{ base: "0px", md: "20px" }}>
               Apres des études en Marketing et développement commercial, j'ai
@@ -107,7 +117,9 @@ const about = () => {
         align="center"
         flex="1 1 auto"
       >
-        <Heading>Technologies utilisées</Heading>
+        <Heading letterSpacing="4px" textAlign={{ base: "center" }}>
+          Technologies utilisées
+        </Heading>
         <Stack
           w="full"
           direction="column"
@@ -170,4 +182,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

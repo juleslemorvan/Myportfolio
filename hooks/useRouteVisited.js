@@ -3,7 +3,6 @@ import { AppContext } from "../pages/_app";
 
 export const useRouteVisited = (url) => {
   const [contextValue, setContextValue] = useContext(AppContext);
-  console.log(contextValue.routesVisited);
 
   useEffect(() => {
     return () => {
