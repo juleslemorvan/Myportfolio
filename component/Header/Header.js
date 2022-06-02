@@ -22,7 +22,7 @@ export const Header = () => {
 
   useEffect(() => {
     onClose();
-  }, [router.asPath]);
+  }, [router]);
 
   return (
     <SlideFade
