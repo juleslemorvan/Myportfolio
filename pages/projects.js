@@ -19,7 +19,7 @@ const Projects = () => {
         <Heading
           as="h1"
           mt={4}
-          mb="120px"
+          mb={{ base: "40px", lg: "100px" }}
           letterSpacing="4px"
           fontFamily="Roboto"
           fontWeight="100"

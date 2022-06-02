@@ -1,4 +1,4 @@
-import git from "../assets/img/logo-skillz/git.svg";
+import git from "../assets/img/logo-skillz/git.png";
 import html5 from "../assets/img/logo-skillz/HTML5.svg";
 import css from "../assets/img/logo-skillz/css3.svg";
 import javascript from "../assets/img/logo-skillz/javascript-2.svg";
@@ -57,6 +57,7 @@ export const logoSkillz = [
     titre: "GIT",
     image: git,
     order: 10,
+    label: "Git",
   },
   {
     titre: "firebase",
