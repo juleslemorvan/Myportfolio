@@ -44,6 +44,7 @@ export const ProjectItem = ({
           <Image
             src={imageUrl}
             maxH={{ base: "300px", xl: "unset" }}
+            h="100%"
             w="100%"
             objectFit="cover"
             rounded="xl"
