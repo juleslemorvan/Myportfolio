@@ -81,28 +81,28 @@ const About = () => {
           <Box flex={6} textAlign={{ base: "center", xl: "start" }}>
             <Flex mb="20px" justify="center" align="center">
               <Heading textAlign="center" letterSpacing="4px">
-                À-propos de moi
+                {`À-propos de moi`}
               </Heading>
             </Flex>
             <Box px={{ base: "0px", md: "20px" }}>
-              Apres des études en Marketing et développement commercial, j'ai
-              décidé de me reconvertir dans le developpement Web.
+              {`Après des études en Marketing et développement commercial, j'ai
+              décidé de me reconvertir dans le developpement Web.`}
               <br />
               <br />
-              En 2020 j'ai décidé de me lancer dans l'apprentissage du code en
-              effectuant un bootcamp, le Wagon.
+              {`En 2020 j'ai décidé de me lancer dans l'apprentissage du code en
+              effectuant un bootcamp, le Wagon.`}
               <br />
-              Durant ces 2 mois intensifs j'ai pu concevoir une application Web
-              de bout en bout et acquérir une vision global de son achitecture.
+              {`Durant ces 2 mois intensifs j'ai pu concevoir une application Web
+              de bout en bout et acquérir une vision global de son achitecture.`}
               <br />
-              Face à cette premiere experience ou j'ai utilisé majoritairement
+              {`Face à cette premiere experience ou j'ai utilisé majoritairement
               le language Back "Ruby" avec son framework "Rails", j'ai pu
-              constater mon attirance vers le front avec le language Javascript.
+              constater mon attirance vers le front avec le language Javascript.`}
               <br />
               <br />
-              Fort de ce constat, je me suis lancé par la suite dans une
+              {`Fort de ce constat, je me suis lancé par la suite dans une
               formation Front-end React avec l'organisme OpenclassRoom que je
-              devrai terminer durant les prochaines semaines.
+              devrai terminer durant les prochaines semaines.`}
             </Box>
           </Box>
         </Stack>
@@ -129,13 +129,14 @@ const About = () => {
               {logosRow.map((logo) => {
                 return (
                   <ScaleFade
+                    key={logo.titre}
                     initialScale={0.5}
                     in={inViewport || enterCount > 0}
                     transition={{
                       enter: { duration: 0.6, delay: Math.random() },
                     }}
                   >
-                    <Flex p="10px" h="100px" w="100px" key={logo.titre}>
+                    <Flex p="10px" h="100px" w="100px">
                       {logo.label ? (
                         <Tooltip label={logo.label}>
                           <Box

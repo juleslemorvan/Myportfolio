@@ -13,7 +13,7 @@ import Form from "../component/Form/Form";
 import { BsFillTelephoneForwardFill, BsFillEnvelopeFill } from "react-icons/bs";
 import Meta from "../component/Meta/Meta";
 
-const contact = () => {
+const Contact = () => {
   useRouteVisited("/contact");
   const toast = useToast();
 
@@ -120,4 +120,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

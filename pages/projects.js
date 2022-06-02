@@ -5,7 +5,7 @@ import { projectsData } from "../data/ProjectsData";
 import { ProjectItem } from "../component/ProjectItem/ProjectItem";
 import Meta from "../component/Meta/Meta";
 
-const projects = () => {
+const Projects = () => {
   useRouteVisited("/projects");
 
   return (
@@ -41,4 +41,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;
