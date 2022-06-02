@@ -34,7 +34,7 @@ export const ProjectItem = ({
       justify="stretch"
       spacing={6}
     >
-      <Box flex={4} height="100%">
+      <Box flex={4} height="100%" rounded="xl">
         <SlideFade
           in={inViewport || enterCount > 0}
           transition={{ enter: { duration: 0.5, delay: 0.7 } }}
@@ -43,11 +43,10 @@ export const ProjectItem = ({
         >
           <Image
             src={imageUrl}
-            objectPosition="top top"
-            h="100%"
             maxH={{ base: "300px", xl: "unset" }}
             w="100%"
             objectFit="cover"
+            rounded="xl"
           />
         </SlideFade>
       </Box>
@@ -58,7 +57,7 @@ export const ProjectItem = ({
           offsetX="60px"
           style={{ height: "100%" }}
         >
-          <Box bg="#1A202C" w="100%" h="100%" boxShadow="dark-lg">
+          <Box bg="#1A202C" w="100%" h="100%" boxShadow="dark-lg" rounded="xl">
             <Flex direction="column" justify="center" align="center" py={3}>
               <Heading
                 as="h2"

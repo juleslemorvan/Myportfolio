@@ -18,7 +18,7 @@ const contact = () => {
   const toast = useToast();
 
   return (
-    <Flex align="center" h="100vh" direction="column" w="full" mt="40px">
+    <Flex align="center" py="30px" direction="column" w="full">
       <Meta title={"Jules Le Morvan | Contact"} />
       <ScaleFade
         initialScale={0.9}

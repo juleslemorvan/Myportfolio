@@ -26,12 +26,12 @@ export const breakpoints = createBreakpoints({
   xl: "1281px",
 });
 
-const deviceBreakpoint = {
-  mobile: "sm",
-  tabletS: "md",
-  tabletL: "lg",
-  desktop: "xl",
-};
+// const deviceBreakpoint = {
+//   mobile: "sm",
+//   tabletS: "md",
+//   tabletL: "lg",
+//   desktop: "xl",
+// };
 
 // const useDevice = (device) =>
 //   useMediaQuery([`(min-width : ${breakpoints[deviceBreakpoint[device]]})`])[0];
@@ -110,35 +110,22 @@ const About = () => {
       <Flex justify="center">
         <Divider width="70%" borderColor="teal" my="20px" />
       </Flex>
-      <Flex
-        justify="center"
-        mt="60px"
-        direction="column"
-        align="center"
-        flex="1 1 auto"
-      >
+      <Flex mt="60px" direction="column">
         <Heading letterSpacing="4px" textAlign={{ base: "center" }}>
           Technologies utilisées
         </Heading>
-        <Stack
-          w="full"
+        <Flex
           direction="column"
           align="center"
           justify="center"
           flexWrap="wrap"
-          spacing="50px"
-          alignSelf="center"
-          my="200px"
           ref={myRef}
+          flex="1 1 auto"
+          py={{ base: "40px", sm: "60px", md: "80px", lg: "100px" }}
+          gap={{ base: "0px", lg: "100px" }}
         >
           {logosRows.map((logosRow, index) => (
-            <HStack
-              key={index}
-              spacing="20px"
-              justify="center"
-              shouldWrapChildren
-              wrap="wrap"
-            >
+            <Flex key={index} shouldWrapChildren wrap="wrap" justify="center">
               {logosRow.map((logo) => {
                 return (
                   <ScaleFade
@@ -148,12 +135,7 @@ const About = () => {
                       enter: { duration: 0.6, delay: Math.random() },
                     }}
                   >
-                    <Flex
-                      h="100px"
-                      w="100px"
-                      key={logo.titre}
-                      marginInlineEnd="20px"
-                    >
+                    <Flex p="10px" h="100px" w="100px" key={logo.titre}>
                       {logo.label ? (
                         <Tooltip label={logo.label}>
                           <Box
@@ -174,9 +156,9 @@ const About = () => {
                   </ScaleFade>
                 );
               })}
-            </HStack>
+            </Flex>
           ))}
-        </Stack>
+        </Flex>
       </Flex>
     </Flex>
   );

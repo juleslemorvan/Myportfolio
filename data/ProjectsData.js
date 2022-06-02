@@ -54,11 +54,11 @@ export const projectsData = [
     ],
   },
   {
-    title: "React Tracks 2",
+    title: "Crypto data",
     subtitle: "React and Python",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    imageUrl: "./project-2.gif",
+      "Dashboard analytic sur les cryptos monnaies utilisant la library Recharts JS ",
+    imageUrl: "./CryptoData.png",
     link: "https://reedbarger.com",
     linkGithub: "https://www.github.com",
     technologies: [
