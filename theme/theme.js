@@ -6,6 +6,6 @@ export const theme = extendTheme({
   useSystemColorMode: true,
   colors: {
     ...defaultTheme,
-    white: "#D8CBC7",
+    white: "aliceblue",
   },
 });
