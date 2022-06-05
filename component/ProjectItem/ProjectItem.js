@@ -32,12 +32,11 @@ export const ProjectItem = ({
       ref={myRef}
       alignItems="stretch"
       justify="stretch"
-      spacing={6}
     >
       <Box flex={4} height="100%" rounded="xl">
         <SlideFade
           in={inViewport || enterCount > 0}
-          transition={{ enter: { duration: 0.5, delay: 0.7 } }}
+          transition={{ enter: { duration: 0.5, delay: 0.3 } }}
           offsetX="-60px"
           style={{ height: "100%" }}
         >
@@ -54,7 +53,7 @@ export const ProjectItem = ({
       <Box flex={6} rounded="full" height="100%">
         <SlideFade
           in={inViewport || enterCount > 0}
-          transition={{ enter: { duration: 0.5, delay: 0.7 } }}
+          transition={{ enter: { duration: 0.5, delay: 0.3 } }}
           offsetX="60px"
           style={{ height: "100%" }}
         >

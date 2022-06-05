@@ -21,3 +21,9 @@ svg {
   height: 96px;
   width: 96px;
 }
+/* 
+@media screen and (max-width: 770px) {
+  .navbar {
+    flex-direction: column;
+  }
+} */

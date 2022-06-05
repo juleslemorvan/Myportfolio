@@ -26,24 +26,11 @@ export const breakpoints = createBreakpoints({
   xl: "1281px",
 });
 
-// const deviceBreakpoint = {
-//   mobile: "sm",
-//   tabletS: "md",
-//   tabletL: "lg",
-//   desktop: "xl",
-// };
-
-// const useDevice = (device) =>
-//   useMediaQuery([`(min-width : ${breakpoints[deviceBreakpoint[device]]})`])[0];
-
 const About = () => {
   useRouteVisited("/about");
 
   const myRef = useRef();
   const { inViewport, enterCount, leaveCount } = useInViewport(myRef);
-
-  // const isMobile = useDevice("mobile");
-  // const isTablet = useDevice("tabletS");
 
   const logosRows = getLogoSkillzRows();
 
@@ -70,13 +57,6 @@ const About = () => {
               height="300px"
               style={{ borderRadius: "6px" }}
             />
-            {/* <Image
-              src={ProfilPic}
-              quality={100}
-              width={isMobile ? "100" : isTablet ? "200" : "350"}
-              height={isMobile ? "100" : isTablet ? "200" : "350"}
-              style={{ borderRadius: "6px" }}
-            /> */}
           </Flex>
           <Box flex={6} textAlign={{ base: "center", xl: "start" }}>
             <Flex mb="20px" justify="center" align="center">

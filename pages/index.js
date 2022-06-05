@@ -1,12 +1,4 @@
-import {
-  Flex,
-  Heading,
-  SlideFade,
-  Fade,
-  VStack,
-  Box,
-  Stack,
-} from "@chakra-ui/react";
+import { Flex, Heading, SlideFade, Fade, Box, Stack } from "@chakra-ui/react";
 import { Button, ButtonGroup } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import Link from "next/link";

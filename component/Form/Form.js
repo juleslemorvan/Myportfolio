@@ -88,7 +88,7 @@ const Form = () => {
             autoComplete="off"
           />
         </FormControl>
-        <FormControl>
+        <FormControl isRequired>
           <Text mb="8px">Votre message: </Text>
           <Textarea
             placeholder="Votre message ..."
