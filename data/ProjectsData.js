@@ -4,7 +4,7 @@ export const projectsData = [
     subtitle: "MERN Stack",
     description:
       "Netclone est une appication de cinema utilisant l'API TMDB, Plusieurs fonctionnalités sont présentes (details de chaque film, création de compte, ajout de favoris). ",
-    imageUrl: "./netflix.png",
+    imageUrl: "./netflix.jpg",
     link: "https://reactbootcamp.com",
     linkGithub: "https://www.github.com",
     technologies: [
