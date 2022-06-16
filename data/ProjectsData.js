@@ -4,7 +4,7 @@ export const projectsData = [
     subtitle: "MERN Stack",
     description:
       "Netclone est une appication de cinema utilisant l'API TMDB, Plusieurs fonctionnalités sont présentes (details de chaque film, création de compte, ajout de favoris). ",
-    imageUrl: "./netflix.jpg",
+    image: "./netflix.jpg",
     link: "https://reactbootcamp.com",
     linkGithub: "https://www.github.com",
     technologies: [
@@ -31,7 +31,7 @@ export const projectsData = [
     subtitle: "React and Python",
     description:
       "Kasa est un site vitrine de location d’appartements entre particuliers. ",
-    imageUrl: "./kasa.png",
+    image: "./kasa.png",
     link: "https://reedbarger.com",
     linkGithub: "https://www.github.com",
     technologies: [
@@ -58,8 +58,8 @@ export const projectsData = [
     subtitle: "React and Python",
     description:
       "Dashboard analytic sur les cryptos monnaies utilisant la library Recharts JS ",
-    imageUrl: "./CryptoData.png",
-    link: "https://reedbarger.com",
+    image: "./CryptoData.png",
+    link: "https://crypto-data-6c34a.web.app/",
     linkGithub: "https://www.github.com",
     technologies: [
       {

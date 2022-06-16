@@ -16,7 +16,7 @@ import { useInViewport } from "react-in-viewport";
 export const ProjectItem = ({
   title,
   description,
-  imageUrl,
+  image,
   linkGithub,
   technologies,
 }) => {
@@ -41,7 +41,7 @@ export const ProjectItem = ({
           style={{ height: "100%" }}
         >
           <Image
-            src={imageUrl}
+            src={image}
             maxH={{ base: "300px", xl: "unset" }}
             h="100%"
             w="100%"

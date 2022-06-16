@@ -5,8 +5,6 @@ import {
   ScaleFade,
   Stack,
   Divider,
-  useMediaQuery,
-  HStack,
   Tooltip,
 } from "@chakra-ui/react";
 import Image from "next/image";

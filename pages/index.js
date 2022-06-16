@@ -73,7 +73,7 @@ export default function Home() {
           letterSpacing="3px"
           textAlign="center"
         >
-          Développeur Front-End
+          Front-end Developer
         </Heading>
       </Fading>
 
@@ -97,7 +97,7 @@ export default function Home() {
               _hover={{ transform: "scale(1.1)" }}
             >
               <Link href="/ProfilPic.jpg" download>
-                CV
+                Resume
               </Link>
             </Button>
             <Button
