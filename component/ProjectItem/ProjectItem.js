@@ -101,12 +101,7 @@ export const ProjectItem = ({
                 mb={{ base: "20px" }}
                 size="md"
               >
-                <Button
-                  colorScheme="blue"
-                  onClick={() =>
-                    window.open("https://www.producthunt.com/posts/svg-doodles")
-                  }
-                >
+                <Button colorScheme="blue" onClick={() => window.open(link)}>
                   Site
                 </Button>
                 <Button
