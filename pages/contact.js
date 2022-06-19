@@ -32,7 +32,7 @@ const Contact = () => {
           letterSpacing="3px"
           pb="30px"
         >
-          Me Contacter ?
+          You want to contact me ?
         </Heading>
       </ScaleFade>
 
@@ -107,8 +107,7 @@ const Contact = () => {
               fontWeight="700"
               letterSpacing="1px"
             >
-              Pour toutes demandes, envoyer un message ! Je vous répondrai au
-              plus vite ! ☻
+              For all requests, send a message! I will answer you quickly! ☻
             </Flex>
             <Flex justifyContent="center" align="center" w="100%">
               <Form />

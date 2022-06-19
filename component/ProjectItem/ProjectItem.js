@@ -18,6 +18,7 @@ export const ProjectItem = ({
   description,
   image,
   linkGithub,
+  linkSite,
   technologies,
 }) => {
   const myRef = useRef();
@@ -82,6 +83,9 @@ export const ProjectItem = ({
                 direction="row"
                 spacing={4}
                 py={{ base: "20px", md: "0px", lg: "0px" }}
+                alignItems="center"
+                flexWrap="wrap"
+                justifyContent="center"
               >
                 {technologies.map(({ name, color }) => (
                   <Badge
@@ -89,6 +93,7 @@ export const ProjectItem = ({
                     variant="outline"
                     colorScheme={color}
                     fontSize={{ lg: "17px" }}
+                    marginBottom={{ base: "6px", md: "0px" }}
                   >
                     {name}
                   </Badge>
@@ -101,7 +106,10 @@ export const ProjectItem = ({
                 mb={{ base: "20px" }}
                 size="md"
               >
-                <Button colorScheme="blue" onClick={() => window.open(link)}>
+                <Button
+                  colorScheme="blue"
+                  onClick={() => window.open(linkSite)}
+                >
                   Site
                 </Button>
                 <Button

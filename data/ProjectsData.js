@@ -5,7 +5,7 @@ export const projectsData = [
     description:
       "Netclone est une appication de cinema utilisant l'API TMDB, Plusieurs fonctionnalités sont présentes (details de chaque film, création de compte, ajout de favoris). ",
     image: "./netflix.jpg",
-    link: "https://reactbootcamp.com",
+    linkSite: "https://reactbootcamp.com",
     linkGithub: "https://www.github.com",
     technologies: [
       {
@@ -32,7 +32,7 @@ export const projectsData = [
     description:
       "Kasa est un site vitrine de location d’appartements entre particuliers. ",
     image: "./kasa.png",
-    link: "https://reedbarger.com",
+    linkSite: "https://reedbarger.com",
     linkGithub: "https://www.github.com",
     technologies: [
       {
@@ -55,11 +55,11 @@ export const projectsData = [
   },
   {
     title: "Crypto data",
-    subtitle: "React and Python",
+    subtitle: "",
     description:
       "Dashboard analytic sur les cryptos monnaies utilisant la library Recharts JS ",
     image: "./CryptoData.png",
-    link: "https://crypto-data-6c34a.web.app/",
+    linkSite: "https://crypto-data-theta.vercel.app/",
     linkGithub: "https://www.github.com",
     technologies: [
       {
@@ -77,6 +77,14 @@ export const projectsData = [
       {
         name: "REACT",
         color: "green",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "teal",
+      },
+      {
+        name: "Firebase",
+        color: "gray",
       },
     ],
   },

@@ -59,28 +59,28 @@ const About = () => {
           <Box flex={6} textAlign={{ base: "center", xl: "start" }}>
             <Flex mb="20px" justify="center" align="center">
               <Heading textAlign="center" letterSpacing="4px">
-                {`À-propos de moi`}
+                {`About Me`}
               </Heading>
             </Flex>
             <Box px={{ base: "0px", md: "20px" }}>
-              {`Après des études en Marketing et développement commercial, j'ai
-              décidé de me reconvertir dans le developpement Web.`}
+              {`After studying Marketing and Business Development, I
+              decided to convert to web development.`}
               <br />
               <br />
-              {`En 2020 j'ai décidé de me lancer dans l'apprentissage du code en
-              effectuant un bootcamp, le Wagon.`}
+              {`In 2020 I decided to start learning code by
+              performing a bootcamp, Le Wagon.`}
               <br />
-              {`Durant ces 2 mois intensifs j'ai pu concevoir une application Web
-              de bout en bout et acquérir une vision global de son achitecture.`}
+              {`During these 2 intensive months I was able to design a Web application
+              from the bottom to the top and acquire a global vision of its architecture.`}
               <br />
-              {`Face à cette premiere experience ou j'ai utilisé majoritairement
-              le language Back "Ruby" avec son framework "Rails", j'ai pu
-              constater mon attirance vers le front avec le language Javascript.`}
+              {`Faced with this first experience where I mainly used
+              the Back "Ruby" language with its "Rails" framework, I was able
+              see my attraction to the front with the Javascript language.`}
               <br />
               <br />
-              {`Fort de ce constat, je me suis lancé par la suite dans une
-              formation Front-end React avec l'organisme OpenclassRoom que je
-              devrai terminer durant les prochaines semaines.`}
+              {`On the strength of this observation, I then embarked on a
+              Front-end React training with the OpenclassRoom organization that I
+              should be completed in the next few weeks.`}
             </Box>
           </Box>
         </Stack>
@@ -90,7 +90,7 @@ const About = () => {
       </Flex>
       <Flex mt="60px" direction="column">
         <Heading letterSpacing="4px" textAlign={{ base: "center" }}>
-          Technologies utilisées
+          Technologies I work with
         </Heading>
         <Flex
           direction="column"
@@ -114,7 +114,15 @@ const About = () => {
                       enter: { duration: 0.6, delay: Math.random() },
                     }}
                   >
-                    <Flex p="10px" h="100px" w="100px">
+                    <Flex
+                      p="10px"
+                      h="100px"
+                      w="100px"
+                      boxShadow="dark-lg"
+                      margin={{ base: "opx", lg: "20px" }}
+                      alignItems="center"
+                      justifyContent="center"
+                    >
                       {logo.label ? (
                         <Tooltip label={logo.label}>
                           <Box

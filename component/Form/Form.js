@@ -52,7 +52,7 @@ const Form = () => {
       <Stack spacing={5} w="100%">
         <Flex direction="row">
           <FormControl isRequired mr="20px">
-            <FormLabel htmlFor="first-name">Prénom</FormLabel>
+            <FormLabel htmlFor="first-name">FirstName</FormLabel>
             <Input
               type="name"
               id="first-name"
@@ -64,7 +64,7 @@ const Form = () => {
             />
           </FormControl>
           <FormControl isRequired>
-            <FormLabel htmlFor="first-name">Nom</FormLabel>
+            <FormLabel htmlFor="first-name">LastName</FormLabel>
             <Input
               type="lastName"
               id="Last-name"
@@ -77,7 +77,7 @@ const Form = () => {
           </FormControl>
         </Flex>
         <FormControl isRequired>
-          <FormLabel htmlFor="first-name">Email</FormLabel>
+          <FormLabel htmlFor="first-name">Mail</FormLabel>
           <Input
             type="email"
             id="email"
@@ -89,9 +89,9 @@ const Form = () => {
           />
         </FormControl>
         <FormControl isRequired>
-          <Text mb="8px">Votre message: </Text>
+          <Text mb="8px"> Message</Text>
           <Textarea
-            placeholder="Votre message ..."
+            placeholder="Your message..."
             size="sm"
             name="message"
             style={{ borderColor: "#355995" }}

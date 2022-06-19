@@ -26,7 +26,7 @@ const Projects = () => {
           textAlign="center"
           fontSize={{ base: "26px", sm: "40px", md: "40px" }}
         >
-          Mes différents projets
+          Some projects I worked on
         </Heading>
       </ScaleFade>
       <VStack align="stretch">

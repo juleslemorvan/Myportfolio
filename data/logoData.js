@@ -23,16 +23,19 @@ export const logoSkillz = [
   {
     titre: "javascript",
     image: javascript,
+    label: "Javascript",
     order: 7,
   },
   {
     titre: "tailwindcss",
     image: tailwindcss,
+    label: "Tailwind CSS",
     order: 6,
   },
   {
     titre: "chakraUi",
     image: chakraUi,
+    label: "Chakra-ui",
     order: 5,
   },
   {
@@ -44,6 +47,7 @@ export const logoSkillz = [
   {
     titre: "nextjs",
     image: nextjs,
+    label: "NextJS",
     order: 3,
   },
   {
@@ -62,6 +66,7 @@ export const logoSkillz = [
   {
     titre: "firebase",
     image: firebase,
+    label: "Firebase",
     order: 4,
   },
 ];
