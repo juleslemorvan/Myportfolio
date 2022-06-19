@@ -122,6 +122,7 @@ const About = () => {
                       margin={{ base: "opx", lg: "20px" }}
                       alignItems="center"
                       justifyContent="center"
+                      _hover={{ transform: "scale(1.3)" }}
                     >
                       {logo.label ? (
                         <Tooltip label={logo.label}>
