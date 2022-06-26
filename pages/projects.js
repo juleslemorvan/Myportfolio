@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { VStack, Heading, Box, ScaleFade } from "@chakra-ui/react";
+import { VStack, Heading, Box, ScaleFade, Flex } from "@chakra-ui/react";
 import { useRouteVisited } from "../hooks/useRouteVisited";
 import { projectsData } from "../data/ProjectsData";
 import { ProjectItem } from "../component/ProjectItem/ProjectItem";
@@ -36,6 +36,25 @@ const Projects = () => {
             <Box h="100px" />
           </Fragment>
         ))}
+        <Flex
+          bg="#1A202C"
+          boxShadow="dark-lg"
+          w="80%"
+          justify="center"
+          rounded="3xl"
+          alignSelf="center"
+        >
+          <Box
+            fontWeight="bold"
+            letterSpacing="3px"
+            fontSize="20px"
+            color="whiteAlpha.800"
+            py="5"
+            textAlign="center"
+          >
+            Redux Project is coming !
+          </Box>
+        </Flex>
       </VStack>
     </VStack>
   );

@@ -57,7 +57,7 @@ export const projectsData = [
     title: "Crypto data",
     subtitle: "",
     description:
-      "Dashboard analytic sur les cryptos monnaies utilisant la library Recharts JS ",
+      "Dashboard analytic sur les cryptos monnaies, l'utilisateur a la possibilité de s'enregistrer puis de se connecter afin d'enregistrer les Crypto-monnaies qui lui sembles les plus interressantes ",
     image: "./CryptoData.png",
     linkSite: "https://crypto-data-theta.vercel.app/",
     linkGithub: "https://www.github.com",

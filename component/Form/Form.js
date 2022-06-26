@@ -105,7 +105,7 @@ const Form = () => {
           variant="outline"
           borderColor="#355995"
         >
-          Envoyer
+          Send
         </Button>
       </Stack>
     </form>

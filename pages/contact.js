@@ -32,7 +32,7 @@ const Contact = () => {
           letterSpacing="3px"
           pb="30px"
         >
-          You want to contact me ?
+          Get in Touch ?
         </Heading>
       </ScaleFade>
 
