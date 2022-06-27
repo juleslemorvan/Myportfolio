@@ -54,7 +54,6 @@ export const logoSkillz = [
     titre: "redux",
     image: redux,
     label: "Redux",
-    link: "https://redux.js.org/",
     order: 2,
   },
   {
