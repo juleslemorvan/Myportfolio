@@ -30,7 +30,7 @@ export const projectsData = [
     title: "Crypto data",
     subtitle: "",
     description:
-      "Dashboard analytic on cryptos currencies, the user has the possibility to register then to connect in order to register the Crypto-currencies which seem to him the most interesting to follow ",
+      "Dashboard analytic on cryptos currencies, the user has the possibility to register then to connect in order to register the Crypto-currencies which seem to him the most interesting to follow. ",
     image: "./CryptoData.png",
     linkSite: "https://crypto-data-theta.vercel.app/",
     linkGithub: "https://www.github.com",
