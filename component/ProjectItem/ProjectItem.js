@@ -48,6 +48,7 @@ export const ProjectItem = ({
             w="100%"
             objectFit="cover"
             rounded="xl"
+            alt="project image"
           />
         </SlideFade>
       </Box>

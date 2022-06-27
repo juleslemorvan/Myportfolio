@@ -1,7 +1,6 @@
 export const projectsData = [
   {
     title: "Netclone",
-    subtitle: "MERN Stack",
     description:
       "Netclone is a movie app using the TMDB API, Several features are present (details of each film, account creation, addition of favorites). ",
     image: "./netflix.jpg",
@@ -28,7 +27,6 @@ export const projectsData = [
   },
   {
     title: "Crypto data",
-    subtitle: "",
     description:
       "Dashboard analytic on cryptos currencies, the user has the possibility to register then to connect in order to register the Crypto-currencies which seem to him the most interesting to follow. ",
     image: "./CryptoData.png",
@@ -63,7 +61,6 @@ export const projectsData = [
   },
   {
     title: "Kasa",
-    subtitle: "React and Python",
     description:
       "Kasa is a showcase site for renting apartments between individuals customers. ",
     image: "./kasa.png",
