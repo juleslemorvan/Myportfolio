@@ -96,8 +96,10 @@ export default function Home() {
               letterSpacing="3px"
               _hover={{ transform: "scale(1.1)" }}
             >
-              <Link href="/ProfilPic.jpg" download>
-                Resume
+              <Link href="">
+                <a href="/Juleslm-_CV.pdf" target="_blank" download>
+                  Resume
+                </a>
               </Link>
             </Button>
             <Button

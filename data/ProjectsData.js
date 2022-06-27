@@ -3,36 +3,9 @@ export const projectsData = [
     title: "Netclone",
     subtitle: "MERN Stack",
     description:
-      "Netclone est une appication de cinema utilisant l'API TMDB, Plusieurs fonctionnalités sont présentes (details de chaque film, création de compte, ajout de favoris). ",
+      "Netclone is a movie app using the TMDB API, Several features are present (details of each film, account creation, addition of favorites). ",
     image: "./netflix.jpg",
     linkSite: "https://reactbootcamp.com",
-    linkGithub: "https://www.github.com",
-    technologies: [
-      {
-        name: "HTML",
-        color: "whiteAlpha",
-      },
-      {
-        name: "CSS",
-        color: "cyan",
-      },
-      {
-        name: "JAVASCRIPT",
-        color: "yellow",
-      },
-      {
-        name: "REACT",
-        color: "green",
-      },
-    ],
-  },
-  {
-    title: "Kasa",
-    subtitle: "React and Python",
-    description:
-      "Kasa est un site vitrine de location d’appartements entre particuliers. ",
-    image: "./kasa.png",
-    linkSite: "https://reedbarger.com",
     linkGithub: "https://www.github.com",
     technologies: [
       {
@@ -57,7 +30,7 @@ export const projectsData = [
     title: "Crypto data",
     subtitle: "",
     description:
-      "Dashboard analytic sur les cryptos monnaies, l'utilisateur a la possibilité de s'enregistrer puis de se connecter afin d'enregistrer les Crypto-monnaies qui lui sembles les plus interressantes ",
+      "Dashboard analytic on cryptos currencies, the user has the possibility to register then to connect in order to register the Crypto-currencies which seem to him the most interesting to follow ",
     image: "./CryptoData.png",
     linkSite: "https://crypto-data-theta.vercel.app/",
     linkGithub: "https://www.github.com",
@@ -85,6 +58,33 @@ export const projectsData = [
       {
         name: "Firebase",
         color: "gray",
+      },
+    ],
+  },
+  {
+    title: "Kasa",
+    subtitle: "React and Python",
+    description:
+      "Kasa is a showcase site for renting apartments between individuals customers. ",
+    image: "./kasa.png",
+    linkSite: "https://kasa-5f6wi1hd8-juleslemorvan.vercel.app/",
+    linkGithub: "https://github.com/juleslemorvan/julesLeMorvan_11_11032022",
+    technologies: [
+      {
+        name: "HTML",
+        color: "whiteAlpha",
+      },
+      {
+        name: "CSS",
+        color: "cyan",
+      },
+      {
+        name: "JAVASCRIPT",
+        color: "yellow",
+      },
+      {
+        name: "REACT",
+        color: "green",
       },
     ],
   },

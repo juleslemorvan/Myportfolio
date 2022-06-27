@@ -123,6 +123,7 @@ const About = () => {
                       alignItems="center"
                       justifyContent="center"
                       _hover={{ transform: "scale(1.3)" }}
+                      transition=" 400ms ease-in-out"
                     >
                       {logo.label ? (
                         <Tooltip label={logo.label}>
