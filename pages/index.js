@@ -97,9 +97,9 @@ export default function Home() {
               _hover={{ transform: "scale(1.1)" }}
             >
               <Link href="">
-                {/* <a href="/Juleslm-_CV.pdf" target="_blank" download> */}
+                <a href="/Juleslm-_CV.pdf" target="_blank" download>
                   Resume
-                {/* </a> */}
+                </a>
               </Link>
             </Button>
             <Button
