@@ -28,7 +28,7 @@ export const projectsData = [
   {
     title: "Crypto data",
     description:
-      "Dashboard analytic on cryptos currencies, the user has the possibility to register then to connect in order to register the Crypto-currencies which seem to him the most interesting to follow. ",
+      "Dashboard analytic on cryptos currencies, the user has the possibility to register then to connect in order to register the Crypto-currencies which seem to him the most interesting to follow.",
     image: "./CryptoData.png",
     linkSite: "https://crypto-data-theta.vercel.app/",
     linkGithub: "https://www.github.com",
@@ -62,7 +62,7 @@ export const projectsData = [
   {
     title: "Kasa",
     description:
-      "Kasa is a showcase site for renting apartments between individuals customers. ",
+      "Kasa is a showcase site for renting apartments between individuals customers.",
     image: "./kasa.png",
     linkSite: "https://kasa-5f6wi1hd8-juleslemorvan.vercel.app/",
     linkGithub: "https://github.com/juleslemorvan/julesLeMorvan_11_11032022",
