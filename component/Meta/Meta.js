@@ -1,12 +1,11 @@
 import Head from "next/head";
-import favicon from "../../public/favicon.png";
+
 
 const Meta = ({ title, description }) => {
   return (
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="shortcut icon" href={favicon} />
     </Head>
   );
 };
