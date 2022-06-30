@@ -14,7 +14,7 @@ import AnimationPages from "../component/AnimationPages/AnimationPages";
 import Meta from "../component/Meta/Meta";
 import { getLogoSkillzRows } from "../data/logoData";
 import { useRouteVisited } from "../hooks/useRouteVisited";
-import ProfilPic from "../public/ProfilPic.jpg";
+import julesPic from "../public/julesPic.png";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 
 export const breakpoints = createBreakpoints({
@@ -49,11 +49,13 @@ const About = () => {
           <Flex flex={4} justify="center" align="center">
             <Image
               alt="image-profil"
-              src={ProfilPic}
+              src={julesPic}
               quality={100}
               width="300px"
               height="300px"
               style={{ borderRadius: "6px" }}
+              objectFit="cover"
+              
             />
           </Flex>
           <Box flex={6} textAlign={{ base: "center", xl: "start" }}>
@@ -135,11 +137,11 @@ const About = () => {
                                 : undefined
                             }
                           >
-                            <Image src={logo.image} />
+                            <Image src={logo.image} alt={logo.titre} />
                           </Box>
                         </Tooltip>
                       ) : (
-                        <Image src={logo.image} />
+                        <Image src={logo.image} alt={logo.titre}/>
                       )}
                     </Flex>
                   </ScaleFade>
