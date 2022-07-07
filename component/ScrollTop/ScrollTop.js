@@ -8,13 +8,12 @@ const scrollToTop = () =>{
     window.scrollTo({
       top: 0, 
       behavior: 'smooth'
-    
     });
   };
 
   return (
     <Box py="4" onClick={scrollToTop}>
-        <FaArrowAltCircleUp size="25px"/>
+        <FaArrowAltCircleUp size="25px" color='aliceblue' />
     </Box>
   )
 }
