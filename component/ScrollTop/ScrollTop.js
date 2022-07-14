@@ -4,7 +4,7 @@ import { FaArrowAltCircleUp } from 'react-icons/fa'
 
 const ScrollTop = () => {
 
-const scrollToTop = () =>{git
+const scrollToTop = () =>{
     window.scrollTo({
       top: 0, 
       behavior: 'smooth'
