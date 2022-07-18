@@ -36,23 +36,32 @@ const About = () => {
     <Flex flex="1 1 auto" direction="column">
       <Meta title={"Jules Le Morvan | Présentation"} />
       <AnimationPages>
+        <Flex justify="center" pt={{base: "0px", md:"40px"}}>
+            <Heading as='h1' letterSpacing="4px"
+          fontFamily="Roboto"
+          fontWeight="100"
+          textAlign="center" fontSize={{ base: "40px", sm: "40px", md: "40px" }}>
+                {`About Me`}
+              </Heading>
+          </Flex>
         <Stack
           direction={{ base: "column", lg: "row" }}
           flex="1 1 auto"
-          my={10}
+          mt={{base: "40px", lg:"0px"}}
           px={{ base: "0px", md: "30px" }}
           h={{ base: "unset", lg: "90vh" }}
           spacing="30px"
           justify="center"
           align="center"
         >
+          
           <Flex flex={4} justify="center" align="center">
             <Image
               alt="image-profil"
               src={julesPic}
               quality={100}
-              width="300px"
-              height="300px"
+              width="350px"
+              height="350px"
               style={{ borderRadius: "6px" }}
               objectFit="cover"
               
@@ -60,9 +69,7 @@ const About = () => {
           </Flex>
           <Box flex={6} textAlign={{ base: "center", xl: "start" }}>
             <Flex mb="20px" justify="center" align="center">
-              <Heading textAlign="center" letterSpacing="4px">
-                {`About Me`}
-              </Heading>
+              
             </Flex>
             <Box px={{ base: "0px", md: "20px" }}>
               {`After studying Marketing and Business Development, I
@@ -76,22 +83,28 @@ const About = () => {
               from the bottom to the top and acquire a global vision of its architecture.`}
               <br />
               {`Faced with this first experience where I mainly used
-              the Back "Ruby" language with its "Rails" framework, I was able
+              the language "Ruby" with its framework "Rails", I was able
               see my attraction to the front with the Javascript language.`}
               <br />
               <br />
               {`On the strength of this observation, I then embarked on a
-              Front-end React training with the OpenclassRoom organization that I
+              Front-end React course with the OpenclassRoom organization that I
               should be completed in the next few weeks.`}
+              <br />
+              <br />
+              {"At the end of these different projects and in view of these multiple technologies used, I decided to specialize in front-end development, React specialty"}
             </Box>
           </Box>
         </Stack>
       </AnimationPages>
       <Flex justify="center">
-        <Divider width="70%" borderColor="teal" my="20px" />
+        <Divider width="70%" borderColor="teal" mt={{base:"20px", md:"100px", xl:"0px"}} />
       </Flex>
       <Flex mt="60px" direction="column">
-        <Heading letterSpacing="4px" textAlign={{ base: "center" }}>
+        <Heading letterSpacing="4px"
+          fontFamily="Roboto"
+          fontWeight="100"
+          textAlign="center">
           Technologies I work with
         </Heading>
         <Flex
