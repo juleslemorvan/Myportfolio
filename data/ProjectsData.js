@@ -1,10 +1,10 @@
 export const projectsData = [
   {
-    title: "Netclone",
+    title: "Netflix Clone",
     description:
-      "Netclone is a movie app using the TMDB API, Several features are present (details of each film, account creation, addition of favorites). ",
+      "Netflix is a movie app using the TMDB API, Several features are present (details of each film, account creation, addition of favorites). ",
     image: "./netflix.jpg",
-    linkSite: "https://reactbootcamp.com",
+    linkSite: "https://netflix-v2-2e0qeas6m-juleslemorvan.vercel.app/",
     linkGithub: "https://www.github.com",
     technologies: [
       {
@@ -22,6 +22,14 @@ export const projectsData = [
       {
         name: "REACT",
         color: "green",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "teal",
+      },
+      {
+        name: "Firebase",
+        color: "gray",
       },
     ],
   },
