@@ -5,7 +5,7 @@ export const projectsData = [
       "Netflix is a movie app using the TMDB API, Several features are present (details of each film, account creation, addition of favorites). ",
     image: "./netflix.jpg",
     linkSite: "https://netflix-v2-2e0qeas6m-juleslemorvan.vercel.app/",
-    linkGithub: "https://www.github.com",
+    linkGithub: "https://github.com/juleslemorvan/netflix-v2",
     technologies: [
       {
         name: "HTML",
@@ -39,7 +39,7 @@ export const projectsData = [
       "Dashboard analytic on cryptos currencies, the user has the possibility to register then to connect in order to register the Crypto-currencies which seem to him the most interesting to follow.",
     image: "./CryptoData.png",
     linkSite: "https://crypto-data-theta.vercel.app/",
-    linkGithub: "https://www.github.com",
+    linkGithub: "https://github.com/juleslemorvan/Crypto-Data",
     technologies: [
       {
         name: "HTML",
