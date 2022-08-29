@@ -3,7 +3,7 @@ export const projectsData = [
     title: "Netflix Clone",
     description:
       "Netflix is a movie app using the TMDB API, Several features are present (details of each film, account creation, addition of favorites). ",
-    image: "./netflix.jpg",
+    image: "./netflix-v2-card-.jpg",
     linkSite: "https://netflix-v2-2e0qeas6m-juleslemorvan.vercel.app/",
     linkGithub: "https://github.com/juleslemorvan/netflix-v2",
     technologies: [
