@@ -4,7 +4,7 @@ export const projectsData = [
     description:
       "Netflix is a movie app using the TMDB API, Several features are present (details of each film, account creation, addition of favorites). ",
     image: "./netflix.webp",
-    linkSite: "https://netflix-v2-2e0qeas6m-juleslemorvan.vercel.app/",
+    linkSite: "https://movie-v2-eight.vercel.app/",
     linkGithub: "https://github.com/juleslemorvan/netflix-v2",
     technologies: [
       {
