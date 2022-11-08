@@ -4,7 +4,7 @@ import { useRouteVisited } from "../hooks/useRouteVisited";
 import { projectsData } from "../data/ProjectsData";
 import { ProjectItem } from "../component/ProjectItem/ProjectItem";
 import Meta from "../component/Meta/Meta";
-import {FaArrowAltCircleUp} from "react-icons/fa"
+import { FaArrowAltCircleUp } from "react-icons/fa";
 import ScrollTop from "../component/ScrollTop/ScrollTop";
 
 const Projects = () => {
@@ -38,7 +38,7 @@ const Projects = () => {
             <Box h="100px" />
           </Fragment>
         ))}
-       
+
         <Flex
           bg="#1A202C"
           boxShadow="dark-lg"
@@ -46,9 +46,7 @@ const Projects = () => {
           justify="center"
           rounded="3xl"
           alignSelf="center"
-          
         >
-          
           <Box
             fontWeight="bold"
             letterSpacing="3px"
@@ -57,19 +55,20 @@ const Projects = () => {
             py="5"
             textAlign="center"
           >
-            Redux Project is coming !
+            Typescript Project is coming !
           </Box>
         </Flex>
-         <Flex bg="#1A202C"
+        <Flex
+          bg="#1A202C"
           boxShadow="dark-lg"
-          w="10%" justify="center"
+          w="10%"
+          justify="center"
           rounded="3xl"
-          alignSelf="center" marginTop="65px"
-          cursor="pointer">
-          
-            <ScrollTop />
-         
-          
+          alignSelf="center"
+          marginTop="65px"
+          cursor="pointer"
+        >
+          <ScrollTop />
         </Flex>
       </VStack>
     </VStack>
