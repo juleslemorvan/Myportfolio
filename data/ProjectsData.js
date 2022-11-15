@@ -4,7 +4,7 @@ export const projectsData = [
     description:
       "hrnet is the final project of my training, it is a tool to identify and sort all the employees of a company. For this project I had to create and publish a package on npm in order to add it and then use it on my project ",
     image: "./Hrnet.png",
-    linkSite: "hrnet-47n32bzvd-juleslemorvan.vercel.app",
+    linkSite: "https://hrnet-rosy.vercel.app/",
     linkGithub:
       "https://github.com/juleslemorvan/Lemorvan_Jules_2_biblioteque_react_02092022",
     technologies: [
