@@ -73,7 +73,7 @@ export const projectsData = [
     description:
       "Dashboard analytic on cryptos currencies, the user has the possibility to register then to connect in order to register the Crypto-currencies which seem to him the most interesting to follow.",
     image: "./CryptoData.png",
-    linkSite: "https://crypto-data-theta.vercel.app/",
+    linkSite: "https://crypto-data-git-master-juleslemorvan.vercel.app/",
     linkGithub: "https://github.com/juleslemorvan/Crypto-Data",
     technologies: [
       {
