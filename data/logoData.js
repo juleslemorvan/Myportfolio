@@ -8,16 +8,19 @@ import react from "../assets/img/logo-skillz/react.svg";
 import nextjs from "../assets/img/logo-skillz/nextjs.svg";
 import redux from "../assets/img/logo-skillz/redux.svg";
 import firebase from "../assets/img/logo-skillz/firebase.svg";
+import angular from "../assets/img/logo-skillz/angular.svg";
 
 export const logoSkillz = [
   {
     titre: "html",
     image: html5,
+    label: "HTML 5",
     order: 8,
   },
   {
     titre: "CSS",
     image: css,
+    label: "CSS",
     order: 9,
   },
   {
@@ -67,6 +70,12 @@ export const logoSkillz = [
     image: firebase,
     label: "Firebase",
     order: 4,
+  },
+  {
+    titre: "Angular",
+    image: angular,
+    label: "Angular",
+    order: 11,
   },
 ];
 
