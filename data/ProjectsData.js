@@ -1,5 +1,43 @@
 export const projectsData = [
   {
+    title: "Paloma Spirits",
+    description:
+      "Paloma is the brand representing several other spirits brands.",
+    image: "./palomaSpirits.png",
+    linkSite: "https://www.palomaspirits.com/",
+    linkGithub: "https://github.com/juleslemorvan/paloma",
+    technologies: [
+      {
+        name: "HTML",
+        color: "whiteAlpha",
+      },
+      {
+        name: "CSS",
+        color: "cyan",
+      },
+      {
+        name: "JAVASCRIPT",
+        color: "yellow",
+      },
+      {
+        name: "REACT",
+        color: "green",
+      },
+      {
+        name: "chakra UI",
+        color: "#691ccc",
+      },
+      {
+        name: "Next JS",
+        color: "#cf4c19",
+      },
+      {
+        name: "Typescript",
+        color: "#e60069",
+      },
+    ],
+  },
+  {
     title: "Hrnet",
     description:
       "hrnet is the final project of my training, it is a tool to identify and sort all the employees of a company. For this project I had to create and publish a package on npm in order to add it and then use it on my project ",
