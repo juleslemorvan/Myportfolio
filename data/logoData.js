@@ -9,6 +9,7 @@ import nextjs from "../assets/img/logo-skillz/nextjs.svg";
 import redux from "../assets/img/logo-skillz/redux.svg";
 import firebase from "../assets/img/logo-skillz/firebase.svg";
 import angular from "../assets/img/logo-skillz/angular.svg";
+import typescript from "../assets/img/logo-skillz/typescript.png";
 
 export const logoSkillz = [
   {
@@ -76,6 +77,12 @@ export const logoSkillz = [
     image: angular,
     label: "Angular",
     order: 11,
+  },
+  {
+    titre: "Typescript",
+    image: typescript,
+    label: "typescript",
+    order: 12,
   },
 ];
 

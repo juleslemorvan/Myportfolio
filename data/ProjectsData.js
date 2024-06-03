@@ -25,15 +25,15 @@ export const projectsData = [
       },
       {
         name: "chakra UI",
-        color: "brown",
+        color: "purple",
       },
       {
         name: "Next JS",
-        color: "salmon",
+        color: "pink",
       },
       {
         name: "Typescript",
-        color: "grey",
+        color: "Teal",
       },
     ],
   },
