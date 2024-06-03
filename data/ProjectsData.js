@@ -33,7 +33,7 @@ export const projectsData = [
       },
       {
         name: "Typescript",
-        color: "Teal",
+        color: "blue",
       },
     ],
   },
