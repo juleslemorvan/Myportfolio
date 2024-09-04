@@ -97,7 +97,7 @@ export default function Home() {
               _hover={{ transform: "scale(1.1)" }}
             >
               <Link href="">
-                <a href="/jules-le-morvan-CV.pdf" target="_blank" download>
+                <a href="/CV-JulesLM.pdf" target="_blank" download>
                   Resume
                 </a>
               </Link>
