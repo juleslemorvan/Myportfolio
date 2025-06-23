@@ -111,7 +111,7 @@ export const ProjectItem = ({
                   colorScheme="blue"
                   onClick={() => window.open(linkSite)}
                 >
-                  Site
+                  Demo
                 </Button>
                 <Button
                   colorScheme="blue"
