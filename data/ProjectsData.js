@@ -2,7 +2,7 @@ export const projectsData = [
   {
     title: "STORE",
     description:
-      "STORE is afull-stack web applications using MongoDB, Express.js, React, and Node.js, AKA the MERN stack, it look like a siple fake store that you can create, update or delete products.",
+      "STORE is a full-stack web applications using MongoDB, Express.js, React, and Node.js, AKA the MERN stack, it look like a simple fake store that you can create, update or delete products.",
     image: "./STORE.png",
     linkSite: "https://mern-project-s2fd.onrender.com/",
     linkGithub: "https://github.com/juleslemorvan/mern-project",
