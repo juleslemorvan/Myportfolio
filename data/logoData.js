@@ -10,7 +10,7 @@ import redux from "../assets/img/logo-skillz/redux.svg";
 import firebase from "../assets/img/logo-skillz/firebase.svg";
 import angular from "../assets/img/logo-skillz/angular.svg";
 import typescript from "../assets/img/logo-skillz/typescript.png";
-import node from "../assets/img/logo-skillz/nodejs.png";
+import node from "../assets/img/logo-skillz/node.png";
 import express from "../assets/img/logo-skillz/express.png";
 import mongodb from "../assets/img/logo-skillz/mongodb.png";
 
