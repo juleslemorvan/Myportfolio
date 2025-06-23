@@ -55,7 +55,7 @@ const Projects = () => {
             py="5"
             textAlign="center"
           >
-            Typescript Project is coming !
+            FullStack Project is coming soon 🧑‍💻​
           </Box>
         </Flex>
         <Flex
