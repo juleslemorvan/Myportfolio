@@ -117,7 +117,7 @@ export const ProjectItem = ({
                   colorScheme="blue"
                   onClick={() => window.open(linkGithub)}
                 >
-                  Code Github
+                  Github
                 </Button>
               </ButtonGroup>
             </Flex>
