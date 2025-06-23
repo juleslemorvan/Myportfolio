@@ -1,5 +1,47 @@
 export const projectsData = [
   {
+    title: "STORE",
+    description:
+      "STORE is afull-stack web applications using MongoDB, Express.js, React, and Node.js, AKA the MERN stack, it look like a siple fake store that you can create, update or delete products.",
+    image: "./STORE.png",
+    linkSite: "https://mern-project-s2fd.onrender.com/",
+    linkGithub: "https://github.com/juleslemorvan/mern-project",
+    technologies: [
+      {
+        name: "HTML",
+        color: "whiteAlpha",
+      },
+      {
+        name: "CSS",
+        color: "cyan",
+      },
+      {
+        name: "JAVASCRIPT",
+        color: "yellow",
+      },
+      {
+        name: "REACT",
+        color: "green",
+      },
+      {
+        name: "chakra UI",
+        color: "purple",
+      },
+      {
+        name: "MongoDB",
+        color: "gray",
+      },
+      {
+        name: "ExpressJS",
+        color: "teal",
+      },
+      {
+        name: "Node",
+        color: "orange",
+      },
+    ],
+  },
+  {
     title: "Paloma Spirits",
     description:
       "Paloma is the brand representing several other spirits brands.",
