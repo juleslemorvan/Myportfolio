@@ -97,7 +97,7 @@ export default function Home() {
           mt={4}
           mb={2}
         >
-          Je conçois des interfaces web modernes, soignées et centrées sur l'expérience utilisateur.
+          Je conçois des interfaces web modernes, soignées et centrées sur l&apos;expérience utilisateur.
         </Heading>
       </Fading>
 

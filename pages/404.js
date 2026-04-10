@@ -26,7 +26,7 @@ export default function NotFound() {
         Page introuvable
       </Heading>
       <Text opacity={0.6} textAlign="center" maxW="400px">
-        Cette page n'existe pas ou a été déplacée.
+        Cette page n&apos;existe pas ou a été déplacée.
       </Text>
       <Button
         as={Link}
@@ -37,7 +37,7 @@ export default function NotFound() {
         _hover={{ transform: "scale(1.05)" }}
         transition="0.3s ease"
       >
-        Retour à l'accueil
+        Retour à l&apos;accueil
       </Button>
     </Flex>
   );
