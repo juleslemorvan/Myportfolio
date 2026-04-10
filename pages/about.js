@@ -57,14 +57,12 @@ const About = () => {
           
           <Flex flex={4} justify="center" align="center">
             <Image
-              alt="image-profil"
+              alt="Jules Le Morvan - Développeur Front-end React"
               src={julesPic}
               quality={100}
-              width="350px"
-              height="350px"
-              style={{ borderRadius: "6px" }}
-              objectFit="cover"
-              
+              width={350}
+              height={350}
+              style={{ borderRadius: "6px", objectFit: "cover" }}
             />
           </Flex>
           <Box flex={6} textAlign={{ base: "center", xl: "start" }}>

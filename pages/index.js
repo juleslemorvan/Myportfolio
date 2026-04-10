@@ -95,12 +95,13 @@ export default function Home() {
               transition="0.3s ease"
               letterSpacing="3px"
               _hover={{ transform: "scale(1.1)" }}
+              as="a"
+              href="/CV-JulesLM.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
             >
-              <Link href="">
-                <a href="/CV-JulesLM.pdf" target="_blank" download>
-                  Resume
-                </a>
-              </Link>
+              Resume
             </Button>
             <Button
               colorScheme="white"
@@ -108,8 +109,10 @@ export default function Home() {
               transition="0.3s ease"
               letterSpacing="3px"
               _hover={{ transform: "scale(1.1)" }}
+              as={Link}
+              href="/contact"
             >
-              <Link href="/contact">Contact</Link>
+              Contact
             </Button>
           </ButtonGroup>
         </Flex>

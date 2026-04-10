@@ -9,52 +9,31 @@ const NavbarLink = ({ title, url }) => {
   const { colorMode } = useColorMode();
 
   return (
-    <Link href={url}>
-      {router.asPath === url ? (
-        <Box
-          as="a"
-          position="relative"
-          cursor="pointer"
-          _before={{
-            position: "absolute",
-            content: '""',
-            display: "block",
-            width: "100%",
-            height: "2px",
-            bottom: "0px",
-            left: "0px",
-            backgroundColor: colorMode === "dark" ? "white" : "#1A202B",
+    <Link href={url} style={{ textDecoration: "none" }}>
+      <Box
+        as="span"
+        position="relative"
+        cursor="pointer"
+        _before={{
+          position: "absolute",
+          content: '""',
+          display: "block",
+          width: "100%",
+          height: "2px",
+          bottom: "0px",
+          left: "0px",
+          backgroundColor: colorMode === "dark" ? "white" : "#1A202B",
+          transform: router.asPath === url ? "scaleX(1)" : "scaleX(0)",
+          transition: "transform 0.3s ease",
+        }}
+        sx={{
+          "&:hover::before": {
             transform: "scaleX(1)",
-          }}
-        >
-          {title}
-        </Box>
-      ) : (
-        <Box
-          as="a"
-          position="relative"
-          cursor="pointer"
-          _before={{
-            position: "absolute",
-            content: '""',
-            display: "block",
-            width: "100%",
-            height: "2px",
-            bottom: "0px",
-            left: "0px",
-            backgroundColor: colorMode === "dark" ? "white" : "#1A202B",
-            transform: "scaleX(0)",
-            transition: "transform 0.3s ease",
-          }}
-          sx={{
-            "&:hover::before": {
-              transform: "scaleX(1)",
-            },
-          }}
-        >
-          {title}
-        </Box>
-      )}
+          },
+        }}
+      >
+        {title}
+      </Box>
     </Link>
   );
 };
