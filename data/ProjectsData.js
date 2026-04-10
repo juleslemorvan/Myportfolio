@@ -2,7 +2,7 @@ export const projectsData = [
   {
     title: "STORE",
     description:
-      "STORE is a full-stack web applications using MongoDB, Express.js, React, and Node.js, AKA the MERN stack, it look like a simple fake store that you can create, update or delete products.",
+      "Application full-stack e-commerce construite avec la stack MERN (MongoDB, Express, React, Node.js). L'utilisateur peut créer, modifier et supprimer des produits via une interface intuitive.",
     image: "./STORE.png",
     linkSite: "https://mern-project-s2fd.onrender.com/",
     linkGithub: "https://github.com/juleslemorvan/mern-project",
@@ -44,7 +44,7 @@ export const projectsData = [
   {
     title: "Paloma Spirits",
     description:
-      "Paloma is the brand representing several other spirits brands.",
+      "Site vitrine multi-marques pour un distributeur de spiritueux. Mise en avant des différentes marques représentées, avec un design élégant et une navigation fluide.",
     image: "./palomaSpirits.png",
     linkSite: "https://www.palomaspirits.com/",
     linkGithub: "https://github.com/juleslemorvan/paloma",
@@ -82,7 +82,7 @@ export const projectsData = [
   {
     title: "Hrnet",
     description:
-      "hrnet is the final project of my training, it is a tool to identify and sort all the employees of a company. For this project I had to create and publish a package on npm in order to add it and then use it on my project ",
+      "Outil RH de gestion des employés, développé en React dans le cadre de ma formation OpenClassRooms. J'ai également conçu et publié un package npm réutilisable intégré au projet.",
     image: "./Hrnet.png",
     linkSite: "https://hrnet-rosy.vercel.app/",
     linkGithub:
@@ -117,7 +117,7 @@ export const projectsData = [
   {
     title: "Netflix Clone",
     description:
-      "Netflix is a movie app using the TMDB API, Several features are present (details of each film, account creation, addition of favorites). ",
+      "Application de films s'appuyant sur l'API TMDB. L'utilisateur peut créer un compte, consulter les détails de chaque film et gérer une liste de favoris personnalisée.",
     image: "./netflix.webp",
     linkSite: "https://movie-v2-eight.vercel.app/",
     linkGithub: "https://github.com/juleslemorvan/netflix-v2",
@@ -151,7 +151,7 @@ export const projectsData = [
   {
     title: "Crypto data",
     description:
-      "Dashboard analytic on cryptos currencies, the user has the possibility to register then to connect in order to register the Crypto-currencies which seem to him the most interesting to follow.",
+      "Dashboard analytique dédié aux cryptomonnaies. Après inscription et connexion, l'utilisateur peut sélectionner et suivre les crypto-actifs qui l'intéressent en temps réel.",
     image: "./CryptoData.png",
     linkSite: "https://crypto-data-git-master-juleslemorvan.vercel.app/",
     linkGithub: "https://github.com/juleslemorvan/Crypto-Data",
@@ -185,7 +185,7 @@ export const projectsData = [
   {
     title: "Kasa",
     description:
-      "Kasa is a showcase site for renting apartments between individuals customers.",
+      "Site vitrine de location d'appartements entre particuliers. Projet de formation centré sur la structure des composants React et la gestion de la navigation.",
     image: "./kasa.png",
     linkSite: "https://kasa-5f6wi1hd8-juleslemorvan.vercel.app/",
     linkGithub: "https://github.com/juleslemorvan/julesLeMorvan_11_11032022",

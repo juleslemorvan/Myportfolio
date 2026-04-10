@@ -34,14 +34,14 @@ const About = () => {
 
   return (
     <Flex flex="1 1 auto" direction="column">
-      <Meta title={"Jules Le Morvan | Présentation"} />
+      <Meta title={"Jules Le Morvan | À propos"} description="Découvrez le parcours de Jules Le Morvan, développeur Front-end React basé en France — reconversion, formation et projets." path="/about" />
       <AnimationPages>
         <Flex justify="center" pt={{base: "0px", md:"40px"}}>
             <Heading as='h1' letterSpacing="4px"
           fontFamily="Roboto"
           fontWeight="100"
           textAlign="center" fontSize={{ base: "40px", sm: "40px", md: "40px" }}>
-                {`About Me`}
+                {`À propos`}
               </Heading>
           </Flex>
         <Stack
@@ -70,27 +70,20 @@ const About = () => {
               
             </Flex>
             <Box px={{ base: "0px", md: "20px" }}>
-              {`After studying Marketing and Business Development, I
-              decided to convert to web development.`}
+              {`Après des études en Marketing et Développement Commercial, j'ai décidé de me reconvertir dans le développement web.`}
               <br />
               <br />
-              {`In 2020 I decided to start learning code by
-              performing a bootcamp, Le Wagon.`}
+              {`En 2020, j'ai commencé à apprendre le code en intégrant un bootcamp intensif : Le Wagon.`}
               <br />
-              {`During these 2 intensive months I was able to design a Web application
-              from the bottom to the top and acquire a global vision of its architecture.`}
+              {`En l'espace de 2 mois, j'ai conçu une application web de A à Z et acquis une vision globale de son architecture.`}
               <br />
-              {`Faced with this first experience where I mainly used
-              the language "Ruby" with its framework "Rails", I was able
-              see my attraction to the front with the Javascript language.`}
+              {`Cette première expérience, principalement axée sur Ruby et Rails, m'a révélé mon attrait pour le front-end et le JavaScript.`}
               <br />
               <br />
-              {`On the strength of this observation, I then embarked on a
-              Front-end React course with the OpenclassRoom organization that I
-              should be completed in the next few weeks.`}
+              {`Fort de ce constat, je me suis lancé dans une formation Front-end React avec OpenClassRooms, que j'ai menée jusqu'à son terme.`}
               <br />
               <br />
-              {"At the end of these different projects and in view of these multiple technologies used, I decided to specialize in front-end development, React specialty"}
+              {`Au fil des projets et des technologies explorées, j'ai choisi de me spécialiser dans le développement front-end, avec React comme expertise principale.`}
             </Box>
           </Box>
         </Stack>
@@ -103,7 +96,7 @@ const About = () => {
           fontFamily="Roboto"
           fontWeight="100"
           textAlign="center">
-          Technologies I work with
+          Technologies maîtrisées
         </Heading>
         <Flex
           direction="column"

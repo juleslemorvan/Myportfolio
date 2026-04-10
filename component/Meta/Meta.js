@@ -16,16 +16,14 @@ const Meta = ({ title, description, path }) => {
       <meta property="og:description" content={description} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content={`${siteUrl}/og-image.jpg`} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
+      <meta property="og:image" content={`${siteUrl}/julesPic.png`} />
       <meta property="og:locale" content="fr_FR" />
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`${siteUrl}/og-image.jpg`} />
+      <meta name="twitter:image" content={`${siteUrl}/julesPic.png`} />
       <meta name="twitter:creator" content="@juleslemorvan" />
     </Head>
   );

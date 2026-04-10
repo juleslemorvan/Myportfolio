@@ -1,6 +1,6 @@
 import { Flex, Heading, SlideFade, Fade, Box, Stack } from "@chakra-ui/react";
 import { Button, ButtonGroup } from "@chakra-ui/react";
-import { FaGithub, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { cloneElement } from "react";
 import { useRouteVisited } from "../hooks/useRouteVisited";
@@ -20,8 +20,8 @@ const NetworkButton = ({ delay, icon, animated }) => {
       animated={animated}
       component={
         <SlideFade
-          offsetX="90px"
-          offsetY="0px"
+          offsetX="0px"
+          offsetY="20px"
           in
           transition={{ enter: { duration: 1, delay } }}
         />
@@ -83,6 +83,30 @@ export default function Home() {
           <SlideFade
             offsetY="10px"
             in
+            transition={{ enter: { duration: 1, delay: 1.3 } }}
+          />
+        }
+      >
+        <Heading
+          fontSize={{ base: "14px", md: "16px" }}
+          fontFamily="Roboto"
+          fontWeight="300"
+          letterSpacing="2px"
+          textAlign="center"
+          opacity={0.6}
+          mt={4}
+          mb={2}
+        >
+          Je conçois des interfaces web modernes, soignées et centrées sur l'expérience utilisateur.
+        </Heading>
+      </Fading>
+
+      <Fading
+        animated={!isVisited}
+        component={
+          <SlideFade
+            offsetY="10px"
+            in
             transition={{ enter: { duration: 1, delay: 1.5 } }}
           />
         }
@@ -101,7 +125,7 @@ export default function Home() {
               rel="noopener noreferrer"
               download
             >
-              Resume
+              CV
             </Button>
             <Button
               colorScheme="white"
@@ -148,16 +172,6 @@ export default function Home() {
                     "https://www.linkedin.com/in/jules-le-morvan-126b8b177/"
                   )
                 }
-              />
-            }
-          />
-          <NetworkButton
-            animated={!isVisited}
-            delay={2.2}
-            icon={
-              <FaTwitterSquare
-                size="25px"
-                onClick={() => window.open("https://twitter.com/juleslemorvan")}
               />
             }
           />

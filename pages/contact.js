@@ -19,7 +19,7 @@ const Contact = () => {
 
   return (
     <Flex align="center" py="30px" direction="column" w="full">
-      <Meta title={"Jules Le Morvan | Contact"} />
+      <Meta title={"Jules Le Morvan | Contact"} description="Contactez Jules Le Morvan, développeur Front-end React — par téléphone, email ou via le formulaire." path="/contact" />
       <ScaleFade
         initialScale={0.9}
         in
@@ -32,7 +32,7 @@ const Contact = () => {
           letterSpacing="3px"
           pb="30px"
         >
-          Get in Touch ?
+          Me contacter
         </Heading>
       </ScaleFade>
 
@@ -53,7 +53,7 @@ const Contact = () => {
             onClick={() => {
               navigator.clipboard.writeText("07 83 12 18 55");
               toast({
-                title: "Téléphone copié dans le presse-papiers",
+                title: "Numéro copié dans le presse-papiers",
                 status: "success",
                 duration: 2000,
                 isClosable: false,
@@ -107,7 +107,7 @@ const Contact = () => {
               fontWeight="700"
               letterSpacing="1px"
             >
-              For all requests, send a message! I will answer you quickly! ☻
+              Pour toute demande, envoyez-moi un message — je répondrai rapidement !
             </Flex>
             <Flex justifyContent="center" align="center" w="100%">
               <Form />

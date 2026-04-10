@@ -55,9 +55,9 @@ export const Navbar = () => {
         fontFamily="Roboto"
         letterSpacing="2px"
       >
-        <NavbarLink url="/" title="Home" />
-        <NavbarLink url="/about" title="About" />
-        <NavbarLink url="/projects" title="Projects" />
+        <NavbarLink url="/" title="Accueil" />
+        <NavbarLink url="/about" title="À propos" />
+        <NavbarLink url="/projects" title="Projets" />
         <NavbarLink url="/contact" title="Contact" />
       </Stack>
 
