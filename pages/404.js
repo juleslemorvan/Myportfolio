@@ -32,7 +32,7 @@ export default function NotFound() {
         as={Link}
         href="/"
         variant="outline"
-        colorScheme="white"
+        colorScheme="gray"
         letterSpacing="3px"
         _hover={{ transform: "scale(1.05)" }}
         transition="0.3s ease"

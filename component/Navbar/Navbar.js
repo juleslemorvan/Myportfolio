@@ -1,12 +1,10 @@
 import React from "react";
-import { Stack, Button, useColorMode, Box } from "@chakra-ui/react";
+import { Stack, Box } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 
 const NavbarLink = ({ title, url }) => {
   const router = useRouter();
-  const { colorMode } = useColorMode();
 
   return (
     <Link href={url} style={{ textDecoration: "none" }}>
@@ -20,9 +18,9 @@ const NavbarLink = ({ title, url }) => {
           display: "block",
           width: "100%",
           height: "2px",
-          bottom: "0px",
+          bottom: "-4px",
           left: "0px",
-          backgroundColor: colorMode === "dark" ? "white" : "#1A202B",
+          backgroundColor: "white",
           transform: router.asPath === url ? "scaleX(1)" : "scaleX(0)",
           transition: "transform 0.3s ease",
         }}
@@ -39,8 +37,6 @@ const NavbarLink = ({ title, url }) => {
 };
 
 export const Navbar = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
-
   return (
     <Stack
       direction={{ base: "column", md: "row" }}
@@ -56,14 +52,10 @@ export const Navbar = () => {
         letterSpacing="2px"
       >
         <NavbarLink url="/" title="Accueil" />
-        <NavbarLink url="/about" title="À propos" />
-        <NavbarLink url="/projects" title="Projets" />
+        <NavbarLink url="/offres" title="Offres" />
+<NavbarLink url="/projects" title="Projets" />
         <NavbarLink url="/contact" title="Contact" />
       </Stack>
-
-      <Button variant="ghost" onClick={() => toggleColorMode()}>
-        {colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
-      </Button>
     </Stack>
   );
 };

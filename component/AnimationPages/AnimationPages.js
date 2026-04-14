@@ -8,14 +8,16 @@ const AnimationPages = ({ children }) => {
   };
 
   return (
-    <motion.div
-      variants={animations}
-      initial="initial"
-      animate="animate"
-      transition={{ duration: 1 }}
-    >
-      {children}
-    </motion.div>
+    <div style={{ overflow: "hidden" }}>
+      <motion.div
+        variants={animations}
+        initial="initial"
+        animate="animate"
+        transition={{ duration: 1 }}
+      >
+        {children}
+      </motion.div>
+    </div>
   );
 };
 

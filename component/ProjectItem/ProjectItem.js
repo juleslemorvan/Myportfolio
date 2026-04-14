@@ -34,12 +34,12 @@ export const ProjectItem = ({
       alignItems="stretch"
       justify="stretch"
     >
-      <Box flex={4} height="100%" rounded="xl">
+      <Box flex={4} display="flex">
         <SlideFade
           in={inViewport || enterCount > 0}
           transition={{ enter: { duration: 0.5, delay: 0.3 } }}
           offsetX="-60px"
-          style={{ height: "100%" }}
+          style={{ display: "flex", flex: 1 }}
         >
           <Image
             src={image}
@@ -48,18 +48,18 @@ export const ProjectItem = ({
             w="100%"
             objectFit="cover"
             rounded="xl"
-            alt="project image"
+            alt={title}
           />
         </SlideFade>
       </Box>
-      <Box flex={6} rounded="full" height="100%">
+      <Box flex={6} display="flex">
         <SlideFade
           in={inViewport || enterCount > 0}
           transition={{ enter: { duration: 0.5, delay: 0.3 } }}
           offsetX="60px"
-          style={{ height: "100%" }}
+          style={{ display: "flex", flex: 1 }}
         >
-          <Box bg="#1A202C" w="100%" h="100%" boxShadow="dark-lg" rounded="xl">
+          <Box bg="gray.800" w="100%" boxShadow="dark-lg" rounded="xl">
             <Flex direction="column" justify="center" align="center" py={3}>
               <Heading
                 as="h2"

@@ -28,7 +28,7 @@ export const Header = () => {
     <SlideFade
       offsetY="-20px"
       in
-      transition={{ enter: { duration: 1, delay: 1.5 } }}
+      transition={{ enter: { duration: 0.6, delay: 1.0 } }}
     >
       <HStack
         justify="space-between"
@@ -51,7 +51,7 @@ export const Header = () => {
         <Show below="md">
           <IconButton
             onClick={onOpen}
-            icon={<HamburgerIcon />}
+            icon={<HamburgerIcon boxSize="22px" />}
             style={{ backgroundColor: "transparent" }}
           />
         </Show>

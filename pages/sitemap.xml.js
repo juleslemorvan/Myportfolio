@@ -6,8 +6,7 @@ export const getServerSideProps = async ({ res }) => {
 
   const pages = [
     { path: "", priority: "1.0" },
-    { path: "/about", priority: "0.8" },
-    { path: "/projects", priority: "0.8" },
+{ path: "/projects", priority: "0.8" },
     { path: "/contact", priority: "0.7" },
   ];
 

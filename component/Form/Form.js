@@ -5,9 +5,8 @@ import {
   Input,
   FormControl,
   Textarea,
-  Text,
-  Flex,
   Button,
+  Flex,
 } from "@chakra-ui/react";
 import { useToast } from "@chakra-ui/react";
 
@@ -60,72 +59,72 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={sendEmail}>
-      <Stack spacing={5} w="100%">
-        <Flex direction="row">
-          <FormControl isRequired mr="20px">
-            <FormLabel htmlFor="name">FirstName</FormLabel>
+    <form onSubmit={sendEmail} style={{ width: "100%" }}>
+      <Stack spacing={5}>
+        <Flex gap={4}>
+          <FormControl isRequired>
+            <FormLabel fontSize="13px" letterSpacing="0.5px" color="gray.500">Prénom</FormLabel>
             <Input
               type="text"
               id="name"
-              placeholder="First name"
-              aria-label="First Name"
+              placeholder="Votre prénom"
               name="name"
               value={fields.name}
               onChange={handleChange}
-              style={{ borderColor: "#355995" }}
+              focusBorderColor="teal.400"
               autoComplete="off"
             />
           </FormControl>
           <FormControl>
-            <FormLabel htmlFor="lastName">LastName</FormLabel>
+            <FormLabel fontSize="13px" letterSpacing="0.5px" color="gray.500">Nom</FormLabel>
             <Input
               type="text"
               id="lastName"
-              placeholder="Last name"
-              aria-label="Last Name"
+              placeholder="Votre nom"
               name="lastName"
               value={fields.lastName}
               onChange={handleChange}
-              style={{ borderColor: "#355995" }}
+              focusBorderColor="teal.400"
               autoComplete="off"
             />
           </FormControl>
         </Flex>
         <FormControl isRequired>
-          <FormLabel htmlFor="email">Mail</FormLabel>
+          <FormLabel fontSize="13px" letterSpacing="0.5px" color="gray.500">Email</FormLabel>
           <Input
             type="email"
             id="email"
-            placeholder="Email"
-            aria-label="email"
+            placeholder="votre@email.com"
             name="email"
             value={fields.email}
             onChange={handleChange}
-            style={{ borderColor: "#355995" }}
+            focusBorderColor="teal.400"
             autoComplete="off"
           />
         </FormControl>
         <FormControl isRequired>
-          <Text mb="8px">Message</Text>
+          <FormLabel fontSize="13px" letterSpacing="0.5px" color="gray.500">Message</FormLabel>
           <Textarea
-            placeholder="Your message..."
-            size="sm"
+            placeholder="Décrivez votre projet, votre activité..."
             name="message"
             value={fields.message}
             onChange={handleChange}
-            style={{ borderColor: "#355995" }}
+            focusBorderColor="teal.400"
             autoComplete="off"
-            minHeight="125px"
+            minHeight="140px"
+            resize="vertical"
           />
         </FormControl>
         <Button
           isLoading={isLoading}
           type="submit"
-          variant="outline"
-          borderColor="#355995"
+          colorScheme="teal"
+          size="md"
+          letterSpacing="1px"
+          _hover={{ transform: "scale(1.02)" }}
+          transition="0.2s ease"
         >
-          Send
+          Envoyer
         </Button>
       </Stack>
     </form>
