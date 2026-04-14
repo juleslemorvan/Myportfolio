@@ -6,6 +6,7 @@ import {
   Box,
   Stack,
   SlideFade,
+  Badge,
   useToast,
 } from "@chakra-ui/react";
 import { BsFillTelephoneForwardFill, BsFillEnvelopeFill } from "react-icons/bs";
@@ -105,12 +106,25 @@ const Contact = () => {
               color="gray.500"
               textAlign="center"
               maxW="480px"
-              mb={14}
+              mb={5}
               fontSize="16px"
               lineHeight="1.8"
             >
-              Décrivez-moi votre activité et ce que vous souhaitez — je vous réponds sous 24h.
+              Décrivez-moi votre activité et ce que vous souhaitez.
             </Text>
+            <Flex justify="center" mb={14}>
+              <Badge
+                colorScheme="teal"
+                variant="subtle"
+                fontSize="13px"
+                px={4}
+                py={2}
+                borderRadius="full"
+                letterSpacing="0.5px"
+              >
+                ⚡ Je réponds sous 24h
+              </Badge>
+            </Flex>
           </SlideFade>
 
           {/* Content */}

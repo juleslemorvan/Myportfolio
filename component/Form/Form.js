@@ -75,7 +75,7 @@ const Form = () => {
               autoComplete="off"
             />
           </FormControl>
-          <FormControl>
+          <FormControl isRequired>
             <FormLabel fontSize="13px" letterSpacing="0.5px" color="gray.500">Nom</FormLabel>
             <Input
               type="text"

@@ -23,26 +23,50 @@ const trustItems = [
   "Sans engagement",
 ];
 
-const WhatYouGet = ({ icon, title, description }) => (
+const WhatYouGet = ({ icon, title, description, index }) => (
   <Box
-    p="24px"
+    p="28px"
     border="1px solid"
     borderColor="gray.200"
-    borderRadius="10px"
-    _hover={{ borderColor: "teal.300", transition: "border-color 0.25s ease" }}
-    transition="border-color 0.25s ease"
+    borderRadius="12px"
+    position="relative"
+    _hover={{ borderColor: "teal.300", boxShadow: "0 4px 20px rgba(0,0,0,0.06)" }}
+    transition="border-color 0.25s ease, box-shadow 0.25s ease"
   >
-    <Text fontSize="26px" mb={3}>{icon}</Text>
+    <Text
+      position="absolute"
+      top="20px"
+      right="22px"
+      fontSize="11px"
+      fontWeight="700"
+      color="gray.200"
+      letterSpacing="1px"
+      fontFamily="Roboto"
+    >
+      0{index + 1}
+    </Text>
+    <Flex
+      w="48px"
+      h="48px"
+      bg="teal.50"
+      borderRadius="10px"
+      align="center"
+      justify="center"
+      fontSize="22px"
+      mb={4}
+    >
+      {icon}
+    </Flex>
     <Heading
       fontFamily="Roboto"
       fontWeight="600"
-      fontSize="14px"
-      letterSpacing="1px"
-      mb={2}
+      fontSize="15px"
+      letterSpacing="0.3px"
+      mb={3}
     >
       {title}
     </Heading>
-    <Text fontSize="14px" color="gray.500" lineHeight="1.7">
+    <Text fontSize="14px" color="gray.500" lineHeight="1.8">
       {description}
     </Text>
   </Box>
@@ -333,8 +357,8 @@ export default function Home() {
         maxW="700px"
         mb={20}
       >
-        {whatYouGet.map((item) => (
-          <WhatYouGet key={item.title} {...item} />
+        {whatYouGet.map((item, i) => (
+          <WhatYouGet key={item.title} {...item} index={i} />
         ))}
       </SimpleGrid>
     </Flex>
