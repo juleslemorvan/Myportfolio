@@ -1,5 +1,73 @@
 export const projectsData = [
   {
+    title: "Artisan Batiment",
+    description:
+      "Site vitrine pour une entreprise de bâtiment, mettant en avant les services proposés, les réalisations passées et les témoignages clients. Design moderne et responsive.",
+    image: "./artisan.webp",
+    linkSite: "https://artisan-site-vitrine.vercel.app/",
+    linkGithub: "https://github.com/juleslemorvan/artisan-site-vitrine",
+    technologies: [
+      {
+        name: "HTML",
+        color: "whiteAlpha",
+      },
+      {
+        name: "CSS",
+        color: "cyan",
+      },
+      {
+        name: "JAVASCRIPT",
+        color: "yellow",
+      },
+      {
+        name: "REACT",
+        color: "green",
+      },
+      {
+        name: "chakra UI",
+        color: "purple",
+      },
+      {
+        name: "Next JS",
+        color: "pink",
+      },
+    ],
+  },
+  {
+    title: "Manhattan pizza",
+    description:
+      "Site vitrine pour un camion pizza, présentant le menu, les offres spéciales et les informations de contact. Le design est convivial et adapté à tous les appareils.",
+    image: "./pizza.webp",
+    linkSite: "https://manhattan-pizza-4kim.vercel.app/",
+    linkGithub: "https://github.com/juleslemorvan/manhattan-pizza",
+    technologies: [
+      {
+        name: "HTML",
+        color: "whiteAlpha",
+      },
+      {
+        name: "CSS",
+        color: "cyan",
+      },
+      {
+        name: "JAVASCRIPT",
+        color: "yellow",
+      },
+      {
+        name: "REACT",
+        color: "green",
+      },
+      {
+        name: "chakra UI",
+        color: "purple",
+      },
+      {
+        name: "Next JS",
+        color: "pink",
+      },
+    ],
+  },
+  {
     title: "STORE",
     description:
       "Application full-stack e-commerce construite avec la stack MERN (MongoDB, Express, React, Node.js). L'utilisateur peut créer, modifier et supprimer des produits via une interface intuitive.",
