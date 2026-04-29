@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import {
   Heading,
   HStack,
-  Show,
-  Hide,
+  Box,
   IconButton,
   Drawer,
   DrawerOverlay,
@@ -45,16 +44,16 @@ export const Header = () => {
         >
           JLM
         </Heading>
-        <Hide below="md">
+        <Box display={{ base: "none", md: "block" }}>
           <Navbar />
-        </Hide>
-        <Show below="md">
+        </Box>
+        <Box display={{ base: "block", md: "none" }}>
           <IconButton
             onClick={onOpen}
             icon={<HamburgerIcon boxSize="22px" />}
             style={{ backgroundColor: "transparent" }}
           />
-        </Show>
+        </Box>
         <Drawer isOpen={isOpen} onClose={onClose} size="full">
           <DrawerOverlay />
           <DrawerContent justifyContent="center" fontSize="30px">
