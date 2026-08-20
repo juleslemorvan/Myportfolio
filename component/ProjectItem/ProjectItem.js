@@ -113,12 +113,14 @@ export const ProjectItem = ({
                 >
                   Démo
                 </Button>
-                <Button
-                  colorScheme="blue"
-                  onClick={() => window.open(linkGithub)}
-                >
-                  GitHub
-                </Button>
+                {linkGithub && (
+                  <Button
+                    colorScheme="blue"
+                    onClick={() => window.open(linkGithub)}
+                  >
+                    GitHub
+                  </Button>
+                )}
               </ButtonGroup>
             </Flex>
           </Box>

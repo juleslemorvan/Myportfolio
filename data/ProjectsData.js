@@ -1,5 +1,38 @@
 export const projectsData = [
   {
+    title: "David's Élagage",
+    description:
+      "Site vitrine pour une entreprise d'élagage, mettant en avant les services proposés, les zones d'intervention et les informations de contact. Design moderne et responsive.",
+    image: "./davids.webp",
+    linkSite: "https://www.davids-elagage.fr/",
+    technologies: [
+      {
+        name: "HTML",
+        color: "whiteAlpha",
+      },
+      {
+        name: "CSS",
+        color: "cyan",
+      },
+      {
+        name: "JAVASCRIPT",
+        color: "yellow",
+      },
+      {
+        name: "REACT",
+        color: "green",
+      },
+      {
+        name: "chakra UI",
+        color: "purple",
+      },
+      {
+        name: "Next JS",
+        color: "pink",
+      },
+    ],
+  },
+  {
     title: "Artisan Batiment",
     description:
       "Site vitrine pour une entreprise de bâtiment, mettant en avant les services proposés, les réalisations passées et les témoignages clients. Design moderne et responsive.",
