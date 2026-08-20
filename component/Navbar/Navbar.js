@@ -1,10 +1,11 @@
 import React from "react";
-import { Stack, Box } from "@chakra-ui/react";
+import { Stack, Box, useColorModeValue } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 const NavbarLink = ({ title, url }) => {
   const router = useRouter();
+  const underlineColor = useColorModeValue("gray.800", "white");
 
   return (
     <Link href={url} style={{ textDecoration: "none" }}>
@@ -20,7 +21,7 @@ const NavbarLink = ({ title, url }) => {
           height: "2px",
           bottom: "-4px",
           left: "0px",
-          backgroundColor: "white",
+          backgroundColor: underlineColor,
           transform: router.asPath === url ? "scaleX(1)" : "scaleX(0)",
           transition: "transform 0.3s ease",
         }}

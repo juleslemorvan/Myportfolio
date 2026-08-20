@@ -9,14 +9,16 @@ import {
   DrawerContent,
   DrawerCloseButton,
   useDisclosure,
+  useColorMode,
   SlideFade,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { Navbar } from "../Navbar/Navbar";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, SunIcon, MoonIcon } from "@chakra-ui/icons";
 
 export const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { colorMode, toggleColorMode } = useColorMode();
   const router = useRouter();
 
   useEffect(() => {
@@ -44,16 +46,32 @@ export const Header = () => {
         >
           JLM
         </Heading>
-        <Box display={{ base: "none", md: "block" }}>
-          <Navbar />
-        </Box>
-        <Box display={{ base: "block", md: "none" }}>
+        <HStack spacing={{ base: "10px", md: "20px" }}>
+          <Box display={{ base: "none", md: "block" }}>
+            <Navbar />
+          </Box>
           <IconButton
-            onClick={onOpen}
-            icon={<HamburgerIcon boxSize="22px" />}
+            aria-label="Basculer le mode clair/obscur"
+            onClick={toggleColorMode}
+            icon={
+              colorMode === "dark" ? (
+                <SunIcon boxSize="18px" />
+              ) : (
+                <MoonIcon boxSize="18px" />
+              )
+            }
+            variant="ghost"
             style={{ backgroundColor: "transparent" }}
           />
-        </Box>
+          <Box display={{ base: "block", md: "none" }}>
+            <IconButton
+              aria-label="Ouvrir le menu"
+              onClick={onOpen}
+              icon={<HamburgerIcon boxSize="22px" />}
+              style={{ backgroundColor: "transparent" }}
+            />
+          </Box>
+        </HStack>
         <Drawer isOpen={isOpen} onClose={onClose} size="full">
           <DrawerOverlay />
           <DrawerContent justifyContent="center" fontSize="30px">
