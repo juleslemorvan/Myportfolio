@@ -1,5 +1,42 @@
 export const projectsData = [
   {
+    title: "Paloma Spirits V2",
+    description:
+      "Refonte du site vitrine multi-marques pour le distributeur de spiritueux Paloma Spirits, avec une nouvelle direction artistique et une expérience de navigation repensée.",
+    image: "./paloma-spirits-v2.png",
+    linkSite: "https://www.palomaspirits.com/en",
+    technologies: [
+      {
+        name: "HTML",
+        color: "whiteAlpha",
+      },
+      {
+        name: "CSS",
+        color: "cyan",
+      },
+      {
+        name: "JAVASCRIPT",
+        color: "yellow",
+      },
+      {
+        name: "REACT",
+        color: "green",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "teal",
+      },
+      {
+        name: "Next JS",
+        color: "pink",
+      },
+      {
+        name: "Typescript",
+        color: "blue",
+      },
+    ],
+  },
+  {
     title: "David's Élagage",
     description:
       "Site vitrine pour une entreprise d'élagage, mettant en avant les services proposés, les zones d'intervention et les informations de contact. Design moderne et responsive.",
